@@ -1969,6 +1969,88 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 21,
+      "home_team": "OCÉANIC DR M13",
+      "away_team": "CATARACTES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "6:25",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "EDDY ACEVEDO MOQUIN",
+            "number": 85
+          },
+          "assists": [
+            {
+              "name": "LEVI CORREIA",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "9:15",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "EDDY ACEVEDO MOQUIN",
+            "number": 85
+          },
+          "assists": [
+            {
+              "name": "MATTHEW CANTINI",
+              "number": 74
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "5:11",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "NATHAN BOUTET",
+            "number": 77
+          },
+          "assists": [
+            {
+              "name": "THEO GAUTHIER",
+              "number": 75
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "0:16",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "FELIX BEAUCHESNE",
+            "number": 81
+          },
+          "assists": [
+            {
+              "name": "MATHIEU LESSARD",
+              "number": 79
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "0:28",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "LEVI CORREIA",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "MILAN DROUIN",
+              "number": 79
+            }
+          ]
+        }
+      ]
     }
   ]
 }
