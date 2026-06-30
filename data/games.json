@@ -160,6 +160,40 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 4,
+      "home_team": "OCÉANIC DR M13",
+      "away_team": "HUSKIES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "10:07",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "NATHAN BOUTET", "number": 77},
+          "assists": [
+            {"name": "FELIX BEAUCHESNE", "number": 81}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "1:33",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "OLIVIER BELAND", "number": 82},
+          "assists": [
+            {"name": "MALIK MIOUSE", "number": 80}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "2:33",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "JACOB GAUTHIER", "number": 72},
+          "assists": [
+            {"name": "LOGAN BLAIS", "number": 86}
+          ]
+        }
+      ]
     }
   ]
 }
