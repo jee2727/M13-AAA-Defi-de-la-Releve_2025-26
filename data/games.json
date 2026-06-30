@@ -628,6 +628,61 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 12,
+      "home_team": "TIGRES DR M13",
+      "away_team": "OCÉANIC DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:28",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "OLIVIER BELAND", "number": 82},
+          "assists": []
+        },
+        {
+          "period": 2,
+          "time": "0:18",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "RAPHAEL PARENT", "number": 78},
+          "assists": [
+            {"name": "GABRIEL GARNEAU", "number": 83}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "1:07",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "DYLAN OUELLET", "number": 86},
+          "assists": [
+            {"name": "NATHAN BOUTET", "number": 77}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "9:26",
+          "team": "TIGRES DR M13",
+          "scorer": {"name": "ARTHUR BERGERON", "number": 16},
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "10:32",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "NATHAN BOUTET", "number": 77},
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "13:09",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "NATHAN SHEA", "number": 87},
+          "assists": [
+            {"name": "JACOB GAUTHIER", "number": 72}
+          ]
+        }
+      ]
     }
   ]
 }
