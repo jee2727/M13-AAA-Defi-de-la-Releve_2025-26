@@ -510,6 +510,72 @@
           "assists": []
         }
       ]
+    },
+    {
+      "game_number": 10,
+      "home_team": "CATARACTES DR M13",
+      "away_team": "VOLTIGEURS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "11:18",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {"name": "TOMMY JAY LATULIPPE", "number": 87},
+          "assists": [
+            {"name": "FELIX PAQUIN", "number": 79}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "12:26",
+          "team": "CATARACTES DR M13",
+          "scorer": {"name": "RAFAEL MICHAUD", "number": 82},
+          "assists": [
+            {"name": "AYDEN BARBOSA", "number": 72}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "14:40",
+          "team": "CATARACTES DR M13",
+          "scorer": {"name": "LEVI CORREIA", "number": 86},
+          "assists": [
+            {"name": "XAVIER HEBERT", "number": 81}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "0:46",
+          "team": "CATARACTES DR M13",
+          "scorer": {"name": "MILAN DROUIN", "number": 79},
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "7:18",
+          "team": "CATARACTES DR M13",
+          "scorer": {"name": "EDDY ACEVEDO MOQUIN", "number": 85},
+          "assists": [
+            {"name": "MATTHEW CANTINI", "number": 74}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "9:28",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {"name": "THEO BROCHU", "number": 75},
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "11:45",
+          "team": "CATARACTES DR M13",
+          "scorer": {"name": "NATHAN BOURRET", "number": 77},
+          "assists": [
+            {"name": "LEVI CORREIA", "number": 86}
+          ]
+        }
+      ]
     }
   ]
 }
