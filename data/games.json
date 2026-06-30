@@ -1,0 +1,75 @@
+{
+  "tournament": "M13 AAA-ELITE Défi de la Relève 2025-26",
+  "location": "Sherbrooke",
+  "total_games": 21,
+  "games": [
+    {
+      "game_number": 1,
+      "home_team": "DRAKKAR DR M13",
+      "away_team": "SAGUENEENS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "0:23",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "MAXENCE LANGLOIS", "number": 78},
+          "assists": [
+            {"name": "CHRISTOPHE BERNARD", "number": 86}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "5:05",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "EDOUARD ST-PIERRE", "number": 87},
+          "assists": [
+            {"name": "JEROME LACHAPELLE", "number": 85}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "6:45",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "JAMES ARSENEAULT", "number": 77},
+          "assists": [
+            {"name": "JORDAN LOBE", "number": 83}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "10:53",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "TYLER STEINBERG", "number": 84},
+          "assists": [
+            {"name": "SAMUEL JAMES BYRNS AUBUT", "number": 73}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "3:00",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "MAIK FORGET", "number": 79},
+          "assists": [
+            {"name": "TYLER STEINBERG", "number": 84}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "7:41",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {"name": "BOISVERT MATHIS", "number": 8},
+          "assists": []
+        },
+        {
+          "period": 2,
+          "time": "14:12",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {"name": "MARCEAU WILLIAM", "number": 17},
+          "assists": [
+            {"name": "SANICO-POTVIN LOUIS", "number": 4}
+          ]
+        }
+      ]
+    }
+  ]
+}
