@@ -125,7 +125,9 @@ def print_report(data, player_stats, team_scores, game_results):
     print("-" * 70)
     for gr in game_results:
         score = f"{gr['home_goals']} - {gr['away_goals']}"
-        print(f"  {gr['game']:>3}  {gr['home']:<28} {score:^7} {gr['away']:<28}")
+        if gr.get("shootout"):
+            score += " SO"
+        print(f"  {gr['game']:>3}  {gr['home']:<28} {score:^10} {gr['away']:<28}")
 
     print("\n\n🏒 PLAYER LEADERBOARD (by points)")
     print("-" * 70)
@@ -162,6 +164,8 @@ def write_markdown(data, player_stats, team_scores, game_results, filepath="STAT
     lines.append("|---|-----------|:-----:|-----------|")
     for gr in game_results:
         score = f"{gr['home_goals']} - {gr['away_goals']}"
+        if gr.get("shootout"):
+            score += " SO"
         lines.append(f"| {gr['game']} | {gr['home']} | {score} | {gr['away']} |")
 
     lines.append("\n## Player Leaderboard\n")
