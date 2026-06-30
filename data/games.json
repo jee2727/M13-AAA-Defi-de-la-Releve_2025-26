@@ -1828,6 +1828,147 @@
           "assists": []
         }
       ]
+    },
+    {
+      "game_number": 20,
+      "home_team": "DRAKKAR DR M13",
+      "away_team": "CATARACTES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:42",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "EDOUARD ST-PIERRE",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "SAMUEL JAMES BYRNS AUBUT",
+              "number": 73
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "8:02",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "FINLEY BRUNELLE",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "SAMUEL LALANDE",
+              "number": 76
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "10:00",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "NATHAN BOURRET",
+            "number": 77
+          },
+          "assists": [
+            {
+              "name": "RAFAEL MICHAUD",
+              "number": 82
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "12:28",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "EDOUARD ST-PIERRE",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "JORDAN LOBE",
+              "number": 83
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "8:47",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "EDDY ACEVEDO MOQUIN",
+            "number": 85
+          },
+          "assists": [
+            {
+              "name": "AYDEN BARBOSA",
+              "number": 72
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "10:02",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "FINLEY BRUNELLE",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "CHRISTOPHE BERNARD",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "6:01",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "ANTHONY SEMINARA",
+            "number": 76
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "9:31",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "WILLIAM LEFRANCOIS",
+            "number": 73
+          },
+          "assists": [
+            {
+              "name": "LEVI CORREIA",
+              "number": 86
+            },
+            {
+              "name": "JAYSON PINEAULT",
+              "number": 87
+            }
+          ]
+        },
+        {
+          "period": 4,
+          "time": "4:39",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "LEVI CORREIA",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "WILLIAM LEFRANCOIS",
+              "number": 73
+            }
+          ]
+        }
+      ]
     }
   ]
 }
