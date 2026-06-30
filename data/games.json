@@ -70,6 +70,41 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 2,
+      "home_team": "REMPARTS DR M13",
+      "away_team": "ARMADA DR M13",
+      "goals": [
+        {
+          "period": 2,
+          "time": "11:22",
+          "team": "ARMADA DR M13",
+          "scorer": {"name": "MATT GENDREAU", "number": 78},
+          "assists": [
+            {"name": "MATHEO ARMSTRONG", "number": 72},
+            {"name": "AYDEN GOUDREAU", "number": 84}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "1:43",
+          "team": "REMPARTS DR M13",
+          "scorer": {"name": "MILAN VUKOMANOVIC", "number": 9},
+          "assists": [
+            {"name": "ALEXIS POUDRIER", "number": 14}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "13:03",
+          "team": "ARMADA DR M13",
+          "scorer": {"name": "SASHA DURDEVIC", "number": 82},
+          "assists": [
+            {"name": "THOMAS LACELLE", "number": 76}
+          ]
+        }
+      ]
     }
   ]
 }
