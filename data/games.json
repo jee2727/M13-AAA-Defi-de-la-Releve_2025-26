@@ -683,6 +683,60 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 13,
+      "home_team": "ARMADA DR M13",
+      "away_team": "DRAKKAR DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "8:31",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "CHRISTOPHE BERNARD", "number": 86},
+          "assists": [
+            {"name": "MAXENCE LANGLOIS", "number": 78},
+            {"name": "JAMES ARSENEAULT", "number": 77}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "3:43",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "JEROME LACHAPELLE", "number": 85},
+          "assists": [
+            {"name": "EDOUARD ST-PIERRE", "number": 87},
+            {"name": "FINLEY BRUNELLE", "number": 82}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "4:25",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "JAMES ARSENEAULT", "number": 77},
+          "assists": [
+            {"name": "CHRISTOPHE BERNARD", "number": 86}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "10:04",
+          "team": "ARMADA DR M13",
+          "scorer": {"name": "EVAN LUSSIER", "number": 80},
+          "assists": [
+            {"name": "SASHA DURDEVIC", "number": 82}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "2:45",
+          "team": "ARMADA DR M13",
+          "scorer": {"name": "YOHAN GRENIER", "number": 86},
+          "assists": [
+            {"name": "SASHA DURDEVIC", "number": 82}
+          ]
+        }
+      ]
     }
   ]
 }
