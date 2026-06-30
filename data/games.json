@@ -576,6 +576,58 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 11,
+      "home_team": "HUSKIES DR M13",
+      "away_team": "OLYMPIQUES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:33",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {"name": "BAPTISTE LEBLOND", "number": 16},
+          "assists": [
+            {"name": "ISAAK GAUTHIER", "number": 14}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "3:06",
+          "team": "HUSKIES DR M13",
+          "scorer": {"name": "PIER-OLIVIER MIVILLE-BELANGER", "number": 86},
+          "assists": [
+            {"name": "LOUIS DROUIN", "number": 82}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "8:02",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {"name": "FLORENT LITALIEN", "number": 7},
+          "assists": [
+            {"name": "ANTHONY RUDOFILOVE", "number": 18}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "9:37",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {"name": "HAYDEN VOHL-COTE", "number": 9},
+          "assists": [
+            {"name": "ALEXIS EMOND", "number": 12}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "10:28",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {"name": "ALEXIS EMOND", "number": 12},
+          "assists": [
+            {"name": "THOMAS PELLETIER", "number": 15}
+          ]
+        }
+      ]
     }
   ]
 }
