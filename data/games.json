@@ -936,6 +936,113 @@
           "assists": []
         }
       ]
+    },
+    {
+      "game_number": 17,
+      "home_team": "HUSKIES DR M13",
+      "away_team": "TIGRES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "0:27",
+          "team": "TIGRES DR M13",
+          "scorer": {"name": "ROMEO BRISSON", "number": 10},
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "4:58",
+          "team": "HUSKIES DR M13",
+          "scorer": {"name": "LUDOVIC PAQUIN", "number": 83},
+          "assists": [
+            {"name": "MAXIM PERRAULT", "number": 75}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "8:49",
+          "team": "HUSKIES DR M13",
+          "scorer": {"name": "LOUIS DROUIN", "number": 82},
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "8:56",
+          "team": "HUSKIES DR M13",
+          "scorer": {"name": "XAVIER MONTMINY", "number": 72},
+          "assists": [
+            {"name": "LUDOVIC PAQUIN", "number": 83}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "12:25",
+          "team": "HUSKIES DR M13",
+          "scorer": {"name": "HUBERT CORRIVEAU", "number": 78},
+          "assists": []
+        },
+        {
+          "period": 2,
+          "time": "2:57",
+          "team": "TIGRES DR M13",
+          "scorer": {"name": "JUSTIN GAUTHIER", "number": 15},
+          "assists": [
+            {"name": "CHARLES-OLIVIER DESBIENS", "number": 17}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "3:17",
+          "team": "HUSKIES DR M13",
+          "scorer": {"name": "HUBERT CORRIVEAU", "number": 78},
+          "assists": [
+            {"name": "FELIX TIMMONS", "number": 76}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "7:36",
+          "team": "TIGRES DR M13",
+          "scorer": {"name": "ALEXIS MAHEUX", "number": 7},
+          "assists": [
+            {"name": "CHARLES-OLIVIER DESBIENS", "number": 17}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "1:19",
+          "team": "HUSKIES DR M13",
+          "scorer": {"name": "XAVIER MONTMINY", "number": 72},
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "8:45",
+          "team": "HUSKIES DR M13",
+          "scorer": {"name": "HUBERT MORNEAU", "number": 77},
+          "assists": [
+            {"name": "MAXIM PERRAULT", "number": 75}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "14:09",
+          "team": "TIGRES DR M13",
+          "scorer": {"name": "CHARLES-OLIVIER COTE", "number": 8},
+          "assists": [
+            {"name": "ROMEO BRISSON", "number": 10}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "14:58",
+          "team": "TIGRES DR M13",
+          "scorer": {"name": "CHARLES PELLETIER", "number": 12},
+          "assists": [
+            {"name": "NATHAN CARRIER", "number": 4}
+          ]
+        }
+      ]
     }
   ]
 }
