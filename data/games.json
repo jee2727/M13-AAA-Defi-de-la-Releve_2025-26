@@ -737,6 +737,51 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 14,
+      "home_team": "SAGUENEENS DR M13",
+      "away_team": "REMPARTS DR M13",
+      "shootout_winner": "REMPARTS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "2:07",
+          "team": "REMPARTS DR M13",
+          "scorer": {"name": "NATHAN AUBRY", "number": 7},
+          "assists": [
+            {"name": "KWENCY FONTAINE", "number": 10},
+            {"name": "VINCENT VINET", "number": 16}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "5:34",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {"name": "GAGNON OLIVIER", "number": 10},
+          "assists": [
+            {"name": "AREERATTANATRAGOON LINWA", "number": 12},
+            {"name": "BOISVERT MATHIS", "number": 8}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "9:02",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {"name": "TREMBLAY SAM", "number": 14},
+          "assists": [
+            {"name": "AMYOT ZACK-OLIVIER", "number": 6},
+            {"name": "GAGNON OLIVIER", "number": 10}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "10:37",
+          "team": "REMPARTS DR M13",
+          "scorer": {"name": "KWENCY FONTAINE", "number": 10},
+          "assists": []
+        }
+      ]
     }
   ]
 }

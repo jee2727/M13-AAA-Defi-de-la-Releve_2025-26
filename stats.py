@@ -24,6 +24,7 @@ def calculate_stats(data):
         gn = game["game_number"]
         home = game["home_team"]
         away = game["away_team"]
+        shootout_winner = game.get("shootout_winner")
         goals_by_team = defaultdict(int)
 
         for goal in game["goals"]:
@@ -44,12 +45,29 @@ def calculate_stats(data):
 
         home_goals = goals_by_team[home]
         away_goals = goals_by_team[away]
-        team_scores[home]["goals_for"] += home_goals
-        team_scores[home]["goals_against"] += away_goals
-        team_scores[away]["goals_for"] += away_goals
-        team_scores[away]["goals_against"] += home_goals
 
-        if home_goals > away_goals:
+        # Shootout: winner gets an extra goal in the final score
+        if shootout_winner == home:
+            home_goals_final = home_goals + 1
+            away_goals_final = away_goals
+        elif shootout_winner == away:
+            home_goals_final = home_goals
+            away_goals_final = away_goals + 1
+        else:
+            home_goals_final = home_goals
+            away_goals_final = away_goals
+
+        team_scores[home]["goals_for"] += home_goals_final
+        team_scores[home]["goals_against"] += away_goals_final
+        team_scores[away]["goals_for"] += away_goals_final
+        team_scores[away]["goals_against"] += home_goals_final
+
+        if shootout_winner:
+            winner = shootout_winner
+            loser = away if shootout_winner == home else home
+            team_scores[winner]["wins"] += 1
+            team_scores[loser]["losses"] += 1
+        elif home_goals > away_goals:
             team_scores[home]["wins"] += 1
             team_scores[away]["losses"] += 1
             winner = home
@@ -64,9 +82,10 @@ def calculate_stats(data):
             "game": gn,
             "home": home,
             "away": away,
-            "home_goals": home_goals,
-            "away_goals": away_goals,
+            "home_goals": home_goals_final,
+            "away_goals": away_goals_final,
             "winner": winner,
+            "shootout": bool(shootout_winner),
         })
 
     return player_stats, team_scores, game_results
