@@ -447,6 +447,69 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 9,
+      "home_team": "PHOENIX DR M13",
+      "away_team": "FOREURS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:26",
+          "team": "FOREURS DR M13",
+          "scorer": {"name": "LIAM AUDET", "number": 7},
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "3:07",
+          "team": "FOREURS DR M13",
+          "scorer": {"name": "SASHA MANOUKIAN", "number": 15},
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "4:13",
+          "team": "PHOENIX DR M13",
+          "scorer": {"name": "MATHIS LAROUCHE", "number": 5},
+          "assists": [
+            {"name": "FULVIO DI GENNARO", "number": 14},
+            {"name": "RYAN DUCHARME", "number": 17}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "9:28",
+          "team": "PHOENIX DR M13",
+          "scorer": {"name": "FELIX LIPPE", "number": 15},
+          "assists": []
+        },
+        {
+          "period": 2,
+          "time": "1:10",
+          "team": "PHOENIX DR M13",
+          "scorer": {"name": "KAYDEN BRASSARD", "number": 12},
+          "assists": [
+            {"name": "JULIAN DIACO", "number": 7}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "7:23",
+          "team": "PHOENIX DR M13",
+          "scorer": {"name": "LOUIS BEAUDOIN", "number": 16},
+          "assists": [
+            {"name": "MATHIS LAROUCHE", "number": 5}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "8:33",
+          "team": "PHOENIX DR M13",
+          "scorer": {"name": "LOUIS BEAUDOIN", "number": 16},
+          "assists": []
+        }
+      ]
     }
   ]
 }
