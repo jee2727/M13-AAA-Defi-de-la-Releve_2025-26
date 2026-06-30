@@ -105,6 +105,61 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 3,
+      "home_team": "TIGRES DR M13",
+      "away_team": "OLYMPIQUES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:21",
+          "team": "TIGRES DR M13",
+          "scorer": {"name": "ALEXIS MAHEUX", "number": 7},
+          "assists": [
+            {"name": "CHARLES PELLETIER", "number": 12}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "7:20",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {"name": "FLORENT LITALIEN", "number": 7},
+          "assists": [
+            {"name": "ARTHUR POULIOT", "number": 11},
+            {"name": "NATHAN GAGNON", "number": 5}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "11:48",
+          "team": "TIGRES DR M13",
+          "scorer": {"name": "EMILE LEBLANC", "number": 14},
+          "assists": [
+            {"name": "MATT LEMIEUX", "number": 9}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "2:09",
+          "team": "TIGRES DR M13",
+          "scorer": {"name": "CHARLES-OLIVIER DESBIENS", "number": 17},
+          "assists": [
+            {"name": "MILAN DERASPE", "number": 3},
+            {"name": "KYLE NOEL", "number": 2}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "14:10",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {"name": "EDOUARD BOUDREAULT", "number": 3},
+          "assists": [
+            {"name": "NOAM PATENAUDE", "number": 2},
+            {"name": "ISAAK GAUTHIER", "number": 14}
+          ]
+        }
+      ]
     }
   ]
 }
