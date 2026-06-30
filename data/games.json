@@ -1,0 +1,2056 @@
+{
+  "tournament": "M13 AAA-ELITE Défi de la Relève 2025-26",
+  "location": "Sherbrooke",
+  "total_games": 21,
+  "games": [
+    {
+      "game_number": 1,
+      "home_team": "DRAKKAR DR M13",
+      "away_team": "SAGUENEENS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "0:23",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "MAXENCE LANGLOIS",
+            "number": 78
+          },
+          "assists": [
+            {
+              "name": "CHRISTOPHE BERNARD",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "5:05",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "EDOUARD ST-PIERRE",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "JEROME LACHAPELLE",
+              "number": 85
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "6:45",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "JAMES ARSENEAULT",
+            "number": 77
+          },
+          "assists": [
+            {
+              "name": "JORDAN LOBE",
+              "number": 83
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "10:53",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "TYLER STEINBERG",
+            "number": 84
+          },
+          "assists": [
+            {
+              "name": "SAMUEL JAMES BYRNS AUBUT",
+              "number": 73
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "3:00",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "MAIK FORGET",
+            "number": 79
+          },
+          "assists": [
+            {
+              "name": "TYLER STEINBERG",
+              "number": 84
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "7:41",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {
+            "name": "BOISVERT MATHIS",
+            "number": 8
+          },
+          "assists": []
+        },
+        {
+          "period": 2,
+          "time": "14:12",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {
+            "name": "MARCEAU WILLIAM",
+            "number": 17
+          },
+          "assists": [
+            {
+              "name": "SANICO-POTVIN LOUIS",
+              "number": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 2,
+      "home_team": "REMPARTS DR M13",
+      "away_team": "ARMADA DR M13",
+      "goals": [
+        {
+          "period": 2,
+          "time": "11:22",
+          "team": "ARMADA DR M13",
+          "scorer": {
+            "name": "MATT GENDREAU",
+            "number": 78
+          },
+          "assists": [
+            {
+              "name": "MATHEO ARMSTRONG",
+              "number": 72
+            },
+            {
+              "name": "AYDEN GOUDREAU",
+              "number": 84
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "1:43",
+          "team": "REMPARTS DR M13",
+          "scorer": {
+            "name": "MILAN VUKOMANOVIC",
+            "number": 9
+          },
+          "assists": [
+            {
+              "name": "ALEXIS POUDRIER",
+              "number": 14
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "13:03",
+          "team": "ARMADA DR M13",
+          "scorer": {
+            "name": "SASHA DURDEVIC",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "THOMAS LACELLE",
+              "number": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 3,
+      "home_team": "TIGRES DR M13",
+      "away_team": "OLYMPIQUES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:21",
+          "team": "TIGRES DR M13",
+          "scorer": {
+            "name": "ALEXIS MAHEUX",
+            "number": 7
+          },
+          "assists": [
+            {
+              "name": "CHARLES PELLETIER",
+              "number": 12
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "7:20",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {
+            "name": "FLORENT LITALIEN",
+            "number": 7
+          },
+          "assists": [
+            {
+              "name": "ARTHUR POULIOT",
+              "number": 11
+            },
+            {
+              "name": "NATHAN GAGNON",
+              "number": 5
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "11:48",
+          "team": "TIGRES DR M13",
+          "scorer": {
+            "name": "EMILE LEBLANC",
+            "number": 14
+          },
+          "assists": [
+            {
+              "name": "MATT LEMIEUX",
+              "number": 9
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "2:09",
+          "team": "TIGRES DR M13",
+          "scorer": {
+            "name": "CHARLES-OLIVIER DESBIENS",
+            "number": 17
+          },
+          "assists": [
+            {
+              "name": "MILAN DERASPE",
+              "number": 3
+            },
+            {
+              "name": "KYLE NOEL",
+              "number": 2
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "14:10",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {
+            "name": "EDOUARD BOUDREAULT",
+            "number": 3
+          },
+          "assists": [
+            {
+              "name": "NOAM PATENAUDE",
+              "number": 2
+            },
+            {
+              "name": "ISAAK GAUTHIER",
+              "number": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 4,
+      "home_team": "OCÉANIC DR M13",
+      "away_team": "HUSKIES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "10:07",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "NATHAN BOUTET",
+            "number": 77
+          },
+          "assists": [
+            {
+              "name": "FELIX BEAUCHESNE",
+              "number": 81
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "1:33",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "OLIVIER BELAND",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "MALIK MIOUSE",
+              "number": 80
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "2:33",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "JACOB GAUTHIER",
+            "number": 72
+          },
+          "assists": [
+            {
+              "name": "LOGAN BLAIS",
+              "number": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 5,
+      "home_team": "CATARACTES DR M13",
+      "away_team": "FOREURS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "4:30",
+          "team": "FOREURS DR M13",
+          "scorer": {
+            "name": "SASHA MANOUKIAN",
+            "number": 15
+          },
+          "assists": [
+            {
+              "name": "EDOUARD LANDRY",
+              "number": 16
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "13:30",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "LOIK FERLATTE",
+            "number": 75
+          },
+          "assists": [
+            {
+              "name": "MILAN DROUIN",
+              "number": 79
+            },
+            {
+              "name": "DILAN MORIN",
+              "number": 83
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "14:28",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "ISAAK SAURETTE",
+            "number": 84
+          },
+          "assists": [
+            {
+              "name": "WILLIAM LEFRANCOIS",
+              "number": 73
+            },
+            {
+              "name": "EDDY ACEVEDO MOQUIN",
+              "number": 85
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "8:32",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "LEVI CORREIA",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "MATTHEW CANTINI",
+              "number": 74
+            },
+            {
+              "name": "ANTHONY SEMINARA",
+              "number": 76
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "12:17",
+          "team": "FOREURS DR M13",
+          "scorer": {
+            "name": "SASHA MANOUKIAN",
+            "number": 15
+          },
+          "assists": [
+            {
+              "name": "UMBERTO CATAVOLO",
+              "number": 6
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "14:59",
+          "team": "FOREURS DR M13",
+          "scorer": {
+            "name": "ZACK MAZZAWI",
+            "number": 9
+          },
+          "assists": [
+            {
+              "name": "ALEX DEROY",
+              "number": 11
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "1:40",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "LEVI CORREIA",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "MATTHEW CANTINI",
+              "number": 74
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "6:17",
+          "team": "FOREURS DR M13",
+          "scorer": {
+            "name": "ZACK MAZZAWI",
+            "number": 9
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "8:05",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "DILAN MORIN",
+            "number": 83
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "12:42",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "MATTHEW CANTINI",
+            "number": 74
+          },
+          "assists": [
+            {
+              "name": "DILAN MORIN",
+              "number": 83
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 6,
+      "home_team": "VOLTIGEURS DR M13",
+      "away_team": "PHOENIX DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:43",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {
+            "name": "GABRIEL RONDEAU",
+            "number": 84
+          },
+          "assists": [
+            {
+              "name": "PHILIPPE BOUGIE",
+              "number": 86
+            },
+            {
+              "name": "TOMMY JAY LATULIPPE",
+              "number": 87
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "3:44",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "TIMUR DASSI",
+            "number": 6
+          },
+          "assists": [
+            {
+              "name": "MATHIS LAROUCHE",
+              "number": 5
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "2:29",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "TIMUR DASSI",
+            "number": 6
+          },
+          "assists": []
+        }
+      ]
+    },
+    {
+      "game_number": 7,
+      "home_team": "ARMADA DR M13",
+      "away_team": "SAGUENEENS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "7:29",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {
+            "name": "YARED THOMAS",
+            "number": 5
+          },
+          "assists": [
+            {
+              "name": "PLAMONDON ELLIOT",
+              "number": 2
+            },
+            {
+              "name": "MARCEAU WILLIAM",
+              "number": 17
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "14:29",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {
+            "name": "AREERATTANATRAGOON LINWA",
+            "number": 12
+          },
+          "assists": [
+            {
+              "name": "MARCEAU WILLIAM",
+              "number": 17
+            },
+            {
+              "name": "PLAMONDON ELLIOT",
+              "number": 2
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "6:45",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {
+            "name": "MARCEAU WILLIAM",
+            "number": 17
+          },
+          "assists": [
+            {
+              "name": "YARED THOMAS",
+              "number": 5
+            },
+            {
+              "name": "LEHOUX ANTHONY",
+              "number": 16
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "7:54",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {
+            "name": "YARED THOMAS",
+            "number": 5
+          },
+          "assists": [
+            {
+              "name": "RIO MILAN",
+              "number": 11
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "9:39",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {
+            "name": "LESKIEWICZ LIAM",
+            "number": 15
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "14:37",
+          "team": "ARMADA DR M13",
+          "scorer": {
+            "name": "DAMIEN BLANCHARD",
+            "number": 85
+          },
+          "assists": [
+            {
+              "name": "MATT GENDREAU",
+              "number": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 8,
+      "home_team": "DRAKKAR DR M13",
+      "away_team": "REMPARTS DR M13",
+      "goals": [
+        {
+          "period": 2,
+          "time": "4:31",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "FINLEY BRUNELLE",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "MAXENCE LANGLOIS",
+              "number": 78
+            },
+            {
+              "name": "CHRISTOPHE BERNARD",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "4:41",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "JUSTIN LAMBERT",
+            "number": 81
+          },
+          "assists": [
+            {
+              "name": "MAIK FORGET",
+              "number": 79
+            },
+            {
+              "name": "TYLER STEINBERG",
+              "number": 84
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "12:44",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "TYLER STEINBERG",
+            "number": 84
+          },
+          "assists": [
+            {
+              "name": "MAIK FORGET",
+              "number": 79
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "1:22",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "FINLEY BRUNELLE",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "CHRISTOPHE BERNARD",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "5:39",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "MAIK FORGET",
+            "number": 79
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "10:39",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "JUSTIN LAMBERT",
+            "number": 81
+          },
+          "assists": [
+            {
+              "name": "JAMES ARSENEAULT",
+              "number": 77
+            },
+            {
+              "name": "ZACHARY GOSSELIN",
+              "number": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 9,
+      "home_team": "PHOENIX DR M13",
+      "away_team": "FOREURS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:26",
+          "team": "FOREURS DR M13",
+          "scorer": {
+            "name": "LIAM AUDET",
+            "number": 7
+          },
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "3:07",
+          "team": "FOREURS DR M13",
+          "scorer": {
+            "name": "SASHA MANOUKIAN",
+            "number": 15
+          },
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "4:13",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "MATHIS LAROUCHE",
+            "number": 5
+          },
+          "assists": [
+            {
+              "name": "FULVIO DI GENNARO",
+              "number": 14
+            },
+            {
+              "name": "RYAN DUCHARME",
+              "number": 17
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "9:28",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "FELIX LIPPE",
+            "number": 15
+          },
+          "assists": []
+        },
+        {
+          "period": 2,
+          "time": "1:10",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "KAYDEN BRASSARD",
+            "number": 12
+          },
+          "assists": [
+            {
+              "name": "JULIAN DIACO",
+              "number": 7
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "7:23",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "LOUIS BEAUDOIN",
+            "number": 16
+          },
+          "assists": [
+            {
+              "name": "MATHIS LAROUCHE",
+              "number": 5
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "8:33",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "LOUIS BEAUDOIN",
+            "number": 16
+          },
+          "assists": []
+        }
+      ]
+    },
+    {
+      "game_number": 10,
+      "home_team": "CATARACTES DR M13",
+      "away_team": "VOLTIGEURS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "11:18",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {
+            "name": "TOMMY JAY LATULIPPE",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "FELIX PAQUIN",
+              "number": 79
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "12:26",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "RAFAEL MICHAUD",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "AYDEN BARBOSA",
+              "number": 72
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "14:40",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "LEVI CORREIA",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "XAVIER HEBERT",
+              "number": 81
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "0:46",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "MILAN DROUIN",
+            "number": 79
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "7:18",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "EDDY ACEVEDO MOQUIN",
+            "number": 85
+          },
+          "assists": [
+            {
+              "name": "MATTHEW CANTINI",
+              "number": 74
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "9:28",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {
+            "name": "THEO BROCHU",
+            "number": 75
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "11:45",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "NATHAN BOURRET",
+            "number": 77
+          },
+          "assists": [
+            {
+              "name": "LEVI CORREIA",
+              "number": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 11,
+      "home_team": "HUSKIES DR M13",
+      "away_team": "OLYMPIQUES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:33",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {
+            "name": "BAPTISTE LEBLOND",
+            "number": 16
+          },
+          "assists": [
+            {
+              "name": "ISAAK GAUTHIER",
+              "number": 14
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "3:06",
+          "team": "HUSKIES DR M13",
+          "scorer": {
+            "name": "PIER-OLIVIER MIVILLE-BELANGER",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "LOUIS DROUIN",
+              "number": 82
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "8:02",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {
+            "name": "FLORENT LITALIEN",
+            "number": 7
+          },
+          "assists": [
+            {
+              "name": "ANTHONY RUDOFILOVE",
+              "number": 18
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "9:37",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {
+            "name": "HAYDEN VOHL-COTE",
+            "number": 9
+          },
+          "assists": [
+            {
+              "name": "ALEXIS EMOND",
+              "number": 12
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "10:28",
+          "team": "OLYMPIQUES DR M13",
+          "scorer": {
+            "name": "ALEXIS EMOND",
+            "number": 12
+          },
+          "assists": [
+            {
+              "name": "THOMAS PELLETIER",
+              "number": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 12,
+      "home_team": "TIGRES DR M13",
+      "away_team": "OCÉANIC DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:28",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "OLIVIER BELAND",
+            "number": 82
+          },
+          "assists": []
+        },
+        {
+          "period": 2,
+          "time": "0:18",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "RAPHAEL PARENT",
+            "number": 78
+          },
+          "assists": [
+            {
+              "name": "GABRIEL GARNEAU",
+              "number": 83
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "1:07",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "DYLAN OUELLET",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "NATHAN BOUTET",
+              "number": 77
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "9:26",
+          "team": "TIGRES DR M13",
+          "scorer": {
+            "name": "ARTHUR BERGERON",
+            "number": 16
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "10:32",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "NATHAN BOUTET",
+            "number": 77
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "13:09",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "NATHAN SHEA",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "JACOB GAUTHIER",
+              "number": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 13,
+      "home_team": "ARMADA DR M13",
+      "away_team": "DRAKKAR DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "8:31",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "CHRISTOPHE BERNARD",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "MAXENCE LANGLOIS",
+              "number": 78
+            },
+            {
+              "name": "JAMES ARSENEAULT",
+              "number": 77
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "3:43",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "JEROME LACHAPELLE",
+            "number": 85
+          },
+          "assists": [
+            {
+              "name": "EDOUARD ST-PIERRE",
+              "number": 87
+            },
+            {
+              "name": "FINLEY BRUNELLE",
+              "number": 82
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "4:25",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "JAMES ARSENEAULT",
+            "number": 77
+          },
+          "assists": [
+            {
+              "name": "CHRISTOPHE BERNARD",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "10:04",
+          "team": "ARMADA DR M13",
+          "scorer": {
+            "name": "EVAN LUSSIER",
+            "number": 80
+          },
+          "assists": [
+            {
+              "name": "SASHA DURDEVIC",
+              "number": 82
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "2:45",
+          "team": "ARMADA DR M13",
+          "scorer": {
+            "name": "YOHAN GRENIER",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "SASHA DURDEVIC",
+              "number": 82
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 14,
+      "home_team": "SAGUENEENS DR M13",
+      "away_team": "REMPARTS DR M13",
+      "shootout_winner": "REMPARTS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "2:07",
+          "team": "REMPARTS DR M13",
+          "scorer": {
+            "name": "NATHAN AUBRY",
+            "number": 7
+          },
+          "assists": [
+            {
+              "name": "KWENCY FONTAINE",
+              "number": 10
+            },
+            {
+              "name": "VINCENT VINET",
+              "number": 16
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "5:34",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {
+            "name": "GAGNON OLIVIER",
+            "number": 10
+          },
+          "assists": [
+            {
+              "name": "AREERATTANATRAGOON LINWA",
+              "number": 12
+            },
+            {
+              "name": "BOISVERT MATHIS",
+              "number": 8
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "9:02",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {
+            "name": "TREMBLAY SAM",
+            "number": 14
+          },
+          "assists": [
+            {
+              "name": "AMYOT ZACK-OLIVIER",
+              "number": 6
+            },
+            {
+              "name": "GAGNON OLIVIER",
+              "number": 10
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "10:37",
+          "team": "REMPARTS DR M13",
+          "scorer": {
+            "name": "KWENCY FONTAINE",
+            "number": 10
+          },
+          "assists": []
+        }
+      ]
+    },
+    {
+      "game_number": 15,
+      "home_team": "PHOENIX DR M13",
+      "away_team": "CATARACTES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "5:17",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "ANTHONY SEMINARA",
+            "number": 76
+          },
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "5:43",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "JAYSON PINEAULT",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "XAVIER HEBERT",
+              "number": 81
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "7:31",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "EDDY ACEVEDO MOQUIN",
+            "number": 85
+          },
+          "assists": []
+        },
+        {
+          "period": 2,
+          "time": "6:28",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "LOUIS BEAUDOIN",
+            "number": 16
+          },
+          "assists": [
+            {
+              "name": "ZACK ALLAIRE",
+              "number": 3
+            },
+            {
+              "name": "SAMUEL LALONGE",
+              "number": 2
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "0:36",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "DILAN MORIN",
+            "number": 83
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "2:19",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "LOUIS GRANDMAITRE",
+            "number": 80
+          },
+          "assists": [
+            {
+              "name": "LEVI CORREIA",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "5:04",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "RAFAEL MICHAUD",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "LEVI CORREIA",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "10:34",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "KAYDEN BRASSARD",
+            "number": 12
+          },
+          "assists": [
+            {
+              "name": "FULVIO DI GENNARO",
+              "number": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 16,
+      "home_team": "FOREURS DR M13",
+      "away_team": "VOLTIGEURS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "14:11",
+          "team": "FOREURS DR M13",
+          "scorer": {
+            "name": "ZACK MAZZAWI",
+            "number": 9
+          },
+          "assists": [
+            {
+              "name": "ALEXIS RENORD",
+              "number": 10
+            },
+            {
+              "name": "EDOUARD LANDRY",
+              "number": 16
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "0:31",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {
+            "name": "FELIX PAQUIN",
+            "number": 79
+          },
+          "assists": [
+            {
+              "name": "GABRIEL RONDEAU",
+              "number": 84
+            },
+            {
+              "name": "PHILIPPE BOUGIE",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "3:54",
+          "team": "FOREURS DR M13",
+          "scorer": {
+            "name": "DYLAN LANGEVIN",
+            "number": 17
+          },
+          "assists": [
+            {
+              "name": "LIAM AUDET",
+              "number": 7
+            },
+            {
+              "name": "THOMAS DELISLE",
+              "number": 18
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "5:24",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {
+            "name": "XAVIER JEAN",
+            "number": 78
+          },
+          "assists": [
+            {
+              "name": "VICTOR CHENIER",
+              "number": 80
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "11:08",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {
+            "name": "PHILIPPE BOUGIE",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "GABRIEL RONDEAU",
+              "number": 84
+            },
+            {
+              "name": "HENRIK COURNOYER",
+              "number": 81
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "12:49",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {
+            "name": "TYSON ROMANO",
+            "number": 77
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "5:23",
+          "team": "FOREURS DR M13",
+          "scorer": {
+            "name": "UMBERTO CATAVOLO",
+            "number": 6
+          },
+          "assists": [
+            {
+              "name": "SASHA MANOUKIAN",
+              "number": 15
+            },
+            {
+              "name": "ALEXIS RENORD",
+              "number": 10
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "14:51",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {
+            "name": "CEDRICK BERUBE",
+            "number": 74
+          },
+          "assists": []
+        }
+      ]
+    },
+    {
+      "game_number": 17,
+      "home_team": "HUSKIES DR M13",
+      "away_team": "TIGRES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "0:27",
+          "team": "TIGRES DR M13",
+          "scorer": {
+            "name": "ROMEO BRISSON",
+            "number": 10
+          },
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "4:58",
+          "team": "HUSKIES DR M13",
+          "scorer": {
+            "name": "LUDOVIC PAQUIN",
+            "number": 83
+          },
+          "assists": [
+            {
+              "name": "MAXIM PERRAULT",
+              "number": 75
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "8:49",
+          "team": "HUSKIES DR M13",
+          "scorer": {
+            "name": "LOUIS DROUIN",
+            "number": 82
+          },
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "8:56",
+          "team": "HUSKIES DR M13",
+          "scorer": {
+            "name": "XAVIER MONTMINY",
+            "number": 72
+          },
+          "assists": [
+            {
+              "name": "LUDOVIC PAQUIN",
+              "number": 83
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "12:25",
+          "team": "HUSKIES DR M13",
+          "scorer": {
+            "name": "HUBERT CORRIVEAU",
+            "number": 78
+          },
+          "assists": []
+        },
+        {
+          "period": 2,
+          "time": "2:57",
+          "team": "TIGRES DR M13",
+          "scorer": {
+            "name": "JUSTIN GAUTHIER",
+            "number": 15
+          },
+          "assists": [
+            {
+              "name": "CHARLES-OLIVIER DESBIENS",
+              "number": 17
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "3:17",
+          "team": "HUSKIES DR M13",
+          "scorer": {
+            "name": "HUBERT CORRIVEAU",
+            "number": 78
+          },
+          "assists": [
+            {
+              "name": "FELIX TIMMONS",
+              "number": 76
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "7:36",
+          "team": "TIGRES DR M13",
+          "scorer": {
+            "name": "ALEXIS MAHEUX",
+            "number": 7
+          },
+          "assists": [
+            {
+              "name": "CHARLES-OLIVIER DESBIENS",
+              "number": 17
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "1:19",
+          "team": "HUSKIES DR M13",
+          "scorer": {
+            "name": "XAVIER MONTMINY",
+            "number": 72
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "8:45",
+          "team": "HUSKIES DR M13",
+          "scorer": {
+            "name": "HUBERT MORNEAU",
+            "number": 77
+          },
+          "assists": [
+            {
+              "name": "MAXIM PERRAULT",
+              "number": 75
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "14:09",
+          "team": "TIGRES DR M13",
+          "scorer": {
+            "name": "CHARLES-OLIVIER COTE",
+            "number": 8
+          },
+          "assists": [
+            {
+              "name": "ROMEO BRISSON",
+              "number": 10
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "14:58",
+          "team": "TIGRES DR M13",
+          "scorer": {
+            "name": "CHARLES PELLETIER",
+            "number": 12
+          },
+          "assists": [
+            {
+              "name": "NATHAN CARRIER",
+              "number": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 18,
+      "home_team": "OLYMPIQUES DR M13",
+      "away_team": "OCÉANIC DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "2:55",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "NATHAN SHEA",
+            "number": 87
+          },
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "10:42",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "NATHAN SHEA",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "FELIX BEAUCHESNE",
+              "number": 81
+            },
+            {
+              "name": "HUBERT BAILLARGEON",
+              "number": 73
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "8:38",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "MATHIEU LESSARD",
+            "number": 79
+          },
+          "assists": [
+            {
+              "name": "OLIVIER BELAND",
+              "number": 82
+            },
+            {
+              "name": "FELIX BEAUCHESNE",
+              "number": 81
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "12:51",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "FELIX BEAUCHESNE",
+            "number": 81
+          },
+          "assists": []
+        }
+      ]
+    },
+    {
+      "game_number": 19,
+      "home_team": "OCÉANIC DR M13",
+      "away_team": "PHOENIX DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "2:11",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "THEO GAUTHIER",
+            "number": 75
+          },
+          "assists": [
+            {
+              "name": "FELIX BEAUCHESNE",
+              "number": 81
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "12:35",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "NATHAN SHEA",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "MATHIEU LESSARD",
+              "number": 79
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "2:43",
+          "team": "PHOENIX DR M13",
+          "scorer": {
+            "name": "FELIX LIPPE",
+            "number": 15
+          },
+          "assists": [
+            {
+              "name": "HAYDEN CHAYER",
+              "number": 4
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "10:13",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "MATHIEU LESSARD",
+            "number": 79
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "8:37",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "GABRIEL GARNEAU",
+            "number": 83
+          },
+          "assists": [
+            {
+              "name": "NATHAN SHEA",
+              "number": 87
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "13:52",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "MATHIEU LESSARD",
+            "number": 79
+          },
+          "assists": []
+        }
+      ]
+    },
+    {
+      "game_number": 20,
+      "home_team": "DRAKKAR DR M13",
+      "away_team": "CATARACTES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:42",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "EDOUARD ST-PIERRE",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "SAMUEL JAMES BYRNS AUBUT",
+              "number": 73
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "8:02",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "FINLEY BRUNELLE",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "SAMUEL LALANDE",
+              "number": 76
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "10:00",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "NATHAN BOURRET",
+            "number": 77
+          },
+          "assists": [
+            {
+              "name": "RAFAEL MICHAUD",
+              "number": 82
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "12:28",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "EDOUARD ST-PIERRE",
+            "number": 87
+          },
+          "assists": [
+            {
+              "name": "JORDAN LOBE",
+              "number": 83
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "8:47",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "EDDY ACEVEDO MOQUIN",
+            "number": 85
+          },
+          "assists": [
+            {
+              "name": "AYDEN BARBOSA",
+              "number": 72
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "10:02",
+          "team": "DRAKKAR DR M13",
+          "scorer": {
+            "name": "FINLEY BRUNELLE",
+            "number": 82
+          },
+          "assists": [
+            {
+              "name": "CHRISTOPHE BERNARD",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "6:01",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "ANTHONY SEMINARA",
+            "number": 76
+          },
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "9:31",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "WILLIAM LEFRANCOIS",
+            "number": 73
+          },
+          "assists": [
+            {
+              "name": "LEVI CORREIA",
+              "number": 86
+            },
+            {
+              "name": "JAYSON PINEAULT",
+              "number": 87
+            }
+          ]
+        },
+        {
+          "period": 4,
+          "time": "4:39",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "LEVI CORREIA",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "WILLIAM LEFRANCOIS",
+              "number": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "game_number": 21,
+      "home_team": "OCÉANIC DR M13",
+      "away_team": "CATARACTES DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "6:25",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "EDDY ACEVEDO MOQUIN",
+            "number": 85
+          },
+          "assists": [
+            {
+              "name": "LEVI CORREIA",
+              "number": 86
+            }
+          ]
+        },
+        {
+          "period": 1,
+          "time": "9:15",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "EDDY ACEVEDO MOQUIN",
+            "number": 85
+          },
+          "assists": [
+            {
+              "name": "MATTHEW CANTINI",
+              "number": 74
+            }
+          ]
+        },
+        {
+          "period": 2,
+          "time": "5:11",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "NATHAN BOUTET",
+            "number": 77
+          },
+          "assists": [
+            {
+              "name": "THEO GAUTHIER",
+              "number": 75
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "0:16",
+          "team": "OCÉANIC DR M13",
+          "scorer": {
+            "name": "FELIX BEAUCHESNE",
+            "number": 81
+          },
+          "assists": [
+            {
+              "name": "MATHIEU LESSARD",
+              "number": 79
+            }
+          ]
+        },
+        {
+          "period": 3,
+          "time": "0:28",
+          "team": "CATARACTES DR M13",
+          "scorer": {
+            "name": "LEVI CORREIA",
+            "number": 86
+          },
+          "assists": [
+            {
+              "name": "MILAN DROUIN",
+              "number": 79
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

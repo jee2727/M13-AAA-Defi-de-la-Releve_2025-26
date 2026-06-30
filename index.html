@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statistiques – Défi de la Relève M13 AAA-ÉLITE 2025-26</title>
+  <style>
+    /* ── Reset & Base ──────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0a1628;
+      color: #e8eaf0;
+      min-height: 100vh;
+    }
+
+    /* ── Header ────────────────────────────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, #0d2137 0%, #1a3a5c 50%, #0d2137 100%);
+      border-bottom: 3px solid #c8a84b;
+      padding: 28px 24px 20px;
+      text-align: center;
+    }
+
+    header .tournament-badge {
+      display: inline-block;
+      background: #c8a84b;
+      color: #0a1628;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    header h1 span { color: #c8a84b; }
+
+    header .subtitle {
+      margin-top: 6px;
+      font-size: 0.9rem;
+      color: #90a4b8;
+    }
+
+    /* ── Main Layout ───────────────────────────────────────────────── */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    /* ── Summary Cards ─────────────────────────────────────────────── */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .summary-card {
+      background: #122236;
+      border: 1px solid #1e3a52;
+      border-radius: 12px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+
+    .summary-card .value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #c8a84b;
+      line-height: 1;
+    }
+
+    .summary-card .label {
+      font-size: 0.78rem;
+      color: #7090aa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 6px;
+    }
+
+    /* ── Filters ───────────────────────────────────────────────────── */
+    .filters-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .filters-bar label {
+      font-size: 0.82rem;
+      color: #90a4b8;
+      white-space: nowrap;
+    }
+
+    .filters-bar input[type="text"],
+    .filters-bar select {
+      background: #122236;
+      border: 1px solid #1e3a52;
+      border-radius: 8px;
+      color: #e8eaf0;
+      font-size: 0.88rem;
+      padding: 8px 12px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .filters-bar input[type="text"]:focus,
+    .filters-bar select:focus {
+      border-color: #c8a84b;
+    }
+
+    .filters-bar input[type="text"] { min-width: 200px; }
+    .filters-bar select { min-width: 220px; }
+
+    /* ── Table Container ───────────────────────────────────────────── */
+    .table-wrapper {
+      background: #122236;
+      border: 1px solid #1e3a52;
+      border-radius: 14px;
+      overflow: hidden;
+      overflow-x: auto;
+    }
+
+    /* ── Stats Table ───────────────────────────────────────────────── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    thead th {
+      background: #0d2137;
+      color: #c8a84b;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 14px 16px;
+      white-space: nowrap;
+      border-bottom: 2px solid #c8a84b;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s;
+    }
+
+    thead th:hover { background: #163050; }
+
+    thead th .sort-icon {
+      display: inline-block;
+      margin-left: 4px;
+      opacity: 0.4;
+      font-size: 0.7rem;
+    }
+
+    thead th.sort-asc .sort-icon,
+    thead th.sort-desc .sort-icon { opacity: 1; color: #fff; }
+
+    thead th.sort-asc .sort-icon::after  { content: ' ▲'; }
+    thead th.sort-desc .sort-icon::after { content: ' ▼'; }
+    thead th:not(.sort-asc):not(.sort-desc) .sort-icon::after { content: ' ⇅'; }
+
+    tbody tr {
+      border-bottom: 1px solid #1a3045;
+      transition: background 0.15s;
+    }
+
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #163050; }
+
+    /* Top-3 rows */
+    tbody tr.rank-1 td:first-child { border-left: 4px solid #ffd700; }
+    tbody tr.rank-2 td:first-child { border-left: 4px solid #c0c0c0; }
+    tbody tr.rank-3 td:first-child { border-left: 4px solid #cd7f32; }
+
+    td {
+      padding: 12px 16px;
+      white-space: nowrap;
+    }
+
+    td.rank     { color: #7090aa; font-weight: 600; text-align: center; width: 50px; }
+    td.player   { font-weight: 600; color: #e8eaf0; }
+    td.number   { color: #7090aa; font-size: 0.82rem; text-align: center; width: 50px; }
+    td.team     { color: #90a4b8; font-size: 0.83rem; }
+    td.stat     { text-align: center; font-weight: 700; font-size: 1rem; }
+    td.stat-pts { color: #c8a84b; font-size: 1.05rem; }
+    td.stat-g   { color: #ef5350; }
+    td.stat-a   { color: #42a5f5; }
+
+    /* Medal emojis for top 3 */
+    .medal-1::before { content: '🥇 '; }
+    .medal-2::before { content: '🥈 '; }
+    .medal-3::before { content: '🥉 '; }
+
+    /* ── Empty State ───────────────────────────────────────────────── */
+    .empty-state {
+      text-align: center;
+      padding: 48px 16px;
+      color: #7090aa;
+    }
+
+    .empty-state .icon { font-size: 3rem; margin-bottom: 12px; }
+
+    /* ── Footer ────────────────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.78rem;
+      color: #506070;
+      border-top: 1px solid #1a3045;
+    }
+
+    /* ── Responsive ────────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      td.team { display: none; }
+      td.number { display: none; }
+      thead th.col-team { display: none; }
+      thead th.col-num  { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="tournament-badge">M13 AAA-ÉLITE</div>
+  <h1>Défi de la Relève <span>2025-26</span></h1>
+  <div class="subtitle">Sherbrooke, QC &nbsp;·&nbsp; 10 mai 2026 &nbsp;·&nbsp; Statistiques individuelles</div>
+</header>
+
+<main>
+  <!-- Summary Cards -->
+  <div class="summary-grid">
+    <div class="summary-card"><div class="value" id="totalPlayers">—</div><div class="label">Joueurs</div></div>
+    <div class="summary-card"><div class="value" id="totalTeams">—</div><div class="label">Équipes</div></div>
+    <div class="summary-card"><div class="value" id="totalGames">—</div><div class="label">Parties</div></div>
+    <div class="summary-card"><div class="value" id="totalGoals">—</div><div class="label">Buts totaux</div></div>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters-bar">
+    <label for="searchPlayer">🔍</label>
+    <input type="text" id="searchPlayer" placeholder="Rechercher un joueur…" oninput="applyFilters()" />
+    <label for="filterTeam">Équipe :</label>
+    <select id="filterTeam" onchange="applyFilters()">
+      <option value="">Toutes les équipes</option>
+    </select>
+  </div>
+
+  <!-- Table -->
+  <div class="table-wrapper">
+    <table id="statsTable">
+      <thead>
+        <tr>
+          <th data-col="rank"    class="sort-desc">#<span class="sort-icon"></span></th>
+          <th data-col="name"    class="col-name">Joueur<span class="sort-icon"></span></th>
+          <th data-col="number"  class="col-num">#<span class="sort-icon"></span></th>
+          <th data-col="team"    class="col-team">Équipe<span class="sort-icon"></span></th>
+          <th data-col="pts"     class="sort-desc">PTS<span class="sort-icon"></span></th>
+          <th data-col="goals"   title="Buts">B<span class="sort-icon"></span></th>
+          <th data-col="assists" title="Passes décisives">A<span class="sort-icon"></span></th>
+        </tr>
+      </thead>
+      <tbody id="statsBody">
+        <tr><td colspan="7" class="empty-state"><div class="icon">🏒</div><p>Chargement…</p></td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  Défi de la Relève M13 AAA-ÉLITE 2025-26 &mdash; Sherbrooke, QC
+</footer>
+
+<script>
+// ── State ────────────────────────────────────────────────────────────────────
+let allStats = [];
+let sortCol  = 'pts';
+let sortDir  = 'desc';
+
+// ── Load Data ────────────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const res = await fetch('data/games.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    processData(data);
+  } catch (err) {
+    console.error('Could not load data/games.json:', err);
+    document.getElementById('statsBody').innerHTML =
+      '<tr><td colspan="7" class="empty-state">' +
+      '<div class="icon">⚠️</div>' +
+      '<p>Impossible de charger les données.<br>' +
+      'Assurez-vous que le fichier <code>data/games.json</code> est accessible.</p>' +
+      '</td></tr>';
+  }
+}
+
+// ── Process Data ─────────────────────────────────────────────────────────────
+// Data structure: game.goals[].scorer = {name, number}, game.goals[].team,
+//                 game.goals[].assists = [{name, number}]
+function processData(data) {
+  // key: "NAME|number" → stats object
+  const players = {};
+
+  function getKey(name, number) { return name + '|' + number; }
+
+  function ensure(name, number, team) {
+    const k = getKey(name, number);
+    if (!players[k]) {
+      players[k] = { name, number, team, goals: 0, assists: 0 };
+    }
+    return players[k];
+  }
+
+  let goalCount = 0;
+  const teamSet = new Set();
+
+  for (const game of data.games) {
+    for (const goal of game.goals) {
+      goalCount++;
+      const team = goal.team;
+      teamSet.add(team);
+
+      const p = ensure(goal.scorer.name, goal.scorer.number, team);
+      p.goals++;
+
+      for (const assist of goal.assists) {
+        const a = ensure(assist.name, assist.number, team);
+        a.assists++;
+      }
+    }
+  }
+
+  // Only include players who have at least 1 point
+  allStats = Object.values(players)
+    .filter(p => (p.goals + p.assists) > 0)
+    .map(p => ({ ...p, pts: p.goals + p.assists }));
+
+  // Summary cards
+  document.getElementById('totalPlayers').textContent = allStats.length;
+  document.getElementById('totalTeams').textContent   = teamSet.size;
+  document.getElementById('totalGames').textContent   = data.games.length;
+  document.getElementById('totalGoals').textContent   = goalCount;
+
+  // Populate team filter
+  const teamSelect = document.getElementById('filterTeam');
+  [...teamSet].sort().forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t;
+    opt.textContent = t;
+    teamSelect.appendChild(opt);
+  });
+
+  applyFilters();
+}
+
+// ── Filter + Render ──────────────────────────────────────────────────────────
+function applyFilters() {
+  const search     = document.getElementById('searchPlayer').value.trim().toLowerCase();
+  const teamFilter = document.getElementById('filterTeam').value;
+
+  let filtered = allStats.filter(p => {
+    if (search     && !p.name.toLowerCase().includes(search)) return false;
+    if (teamFilter && p.team !== teamFilter)                   return false;
+    return true;
+  });
+
+  filtered = sortStats(filtered);
+  renderTable(filtered);
+  updateSortHeaders();
+}
+
+// ── Sort ─────────────────────────────────────────────────────────────────────
+function sortStats(arr) {
+  return [...arr].sort((a, b) => {
+    const col = sortCol === 'rank' ? 'pts' : sortCol;
+    const va = a[col];
+    const vb = b[col];
+
+    if (typeof va === 'string') {
+      return sortDir === 'asc' ? va.localeCompare(vb, 'fr') : vb.localeCompare(va, 'fr');
+    }
+
+    if (va !== vb) return sortDir === 'asc' ? va - vb : vb - va;
+
+    // Tiebreakers: pts → goals → name
+    if (col !== 'pts' && a.pts !== b.pts) return b.pts - a.pts;
+    if (a.goals !== b.goals)              return b.goals - a.goals;
+    return a.name.localeCompare(b.name, 'fr');
+  });
+}
+
+// ── Render Table ─────────────────────────────────────────────────────────────
+function renderTable(rows) {
+  const tbody = document.getElementById('statsBody');
+
+  if (rows.length === 0) {
+    tbody.innerHTML =
+      '<tr><td colspan="7" class="empty-state">' +
+      '<div class="icon">🔍</div><p>Aucun joueur trouvé.</p>' +
+      '</td></tr>';
+    return;
+  }
+
+  // Assign display ranks (ties share the same rank)
+  let rank = 1;
+  for (let i = 0; i < rows.length; i++) {
+    if (i > 0 && rows[i].pts === rows[i-1].pts && rows[i].goals === rows[i-1].goals) {
+      rows[i].displayRank = rows[i-1].displayRank;
+    } else {
+      rows[i].displayRank = rank;
+    }
+    rank = i + 2;
+  }
+
+  tbody.innerHTML = rows.map(p => {
+    const rankClass = p.displayRank <= 3 ? 'rank-' + p.displayRank : '';
+    const medal     = p.displayRank <= 3 ? 'medal-' + p.displayRank : '';
+    return '<tr class="' + rankClass + '">' +
+      '<td class="rank">' + p.displayRank + '</td>' +
+      '<td class="player ' + medal + '">' + escHtml(p.name) + '</td>' +
+      '<td class="number">' + p.number + '</td>' +
+      '<td class="team">' + escHtml(p.team) + '</td>' +
+      '<td class="stat stat-pts">' + p.pts + '</td>' +
+      '<td class="stat stat-g">' + p.goals + '</td>' +
+      '<td class="stat stat-a">' + p.assists + '</td>' +
+      '</tr>';
+  }).join('');
+}
+
+// ── Column Header Click ───────────────────────────────────────────────────────
+document.querySelector('#statsTable thead').addEventListener('click', function(e) {
+  const th = e.target.closest('th[data-col]');
+  if (!th) return;
+  const col = th.dataset.col;
+  if (col === sortCol) {
+    sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+  } else {
+    sortCol = col;
+    sortDir = 'desc';
+  }
+  applyFilters();
+});
+
+// ── Update Sort Headers ───────────────────────────────────────────────────────
+function updateSortHeaders() {
+  document.querySelectorAll('#statsTable thead th').forEach(function(th) {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.col === sortCol) {
+      th.classList.add(sortDir === 'asc' ? 'sort-asc' : 'sort-desc');
+    }
+  });
+}
+
+// ── Utility ──────────────────────────────────────────────────────────────────
+function escHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// ── Boot ─────────────────────────────────────────────────────────────────────
+updateSortHeaders();
+loadData();
+</script>
+
+</body>
+</html>
