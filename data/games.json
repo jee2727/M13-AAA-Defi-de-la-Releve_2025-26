@@ -385,6 +385,68 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 8,
+      "home_team": "DRAKKAR DR M13",
+      "away_team": "REMPARTS DR M13",
+      "goals": [
+        {
+          "period": 2,
+          "time": "4:31",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "FINLEY BRUNELLE", "number": 82},
+          "assists": [
+            {"name": "MAXENCE LANGLOIS", "number": 78},
+            {"name": "CHRISTOPHE BERNARD", "number": 86}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "4:41",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "JUSTIN LAMBERT", "number": 81},
+          "assists": [
+            {"name": "MAIK FORGET", "number": 79},
+            {"name": "TYLER STEINBERG", "number": 84}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "12:44",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "TYLER STEINBERG", "number": 84},
+          "assists": [
+            {"name": "MAIK FORGET", "number": 79}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "1:22",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "FINLEY BRUNELLE", "number": 82},
+          "assists": [
+            {"name": "CHRISTOPHE BERNARD", "number": 86}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "5:39",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "MAIK FORGET", "number": 79},
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "10:39",
+          "team": "DRAKKAR DR M13",
+          "scorer": {"name": "JUSTIN LAMBERT", "number": 81},
+          "assists": [
+            {"name": "JAMES ARSENEAULT", "number": 77},
+            {"name": "ZACHARY GOSSELIN", "number": 80}
+          ]
+        }
+      ]
     }
   ]
 }
