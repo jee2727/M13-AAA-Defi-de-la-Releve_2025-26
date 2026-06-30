@@ -290,6 +290,39 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 6,
+      "home_team": "VOLTIGEURS DR M13",
+      "away_team": "PHOENIX DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "1:43",
+          "team": "VOLTIGEURS DR M13",
+          "scorer": {"name": "GABRIEL RONDEAU", "number": 84},
+          "assists": [
+            {"name": "PHILIPPE BOUGIE", "number": 86},
+            {"name": "TOMMY JAY LATULIPPE", "number": 87}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "3:44",
+          "team": "PHOENIX DR M13",
+          "scorer": {"name": "TIMUR DASSI", "number": 6},
+          "assists": [
+            {"name": "MATHIS LAROUCHE", "number": 5}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "2:29",
+          "team": "PHOENIX DR M13",
+          "scorer": {"name": "TIMUR DASSI", "number": 6},
+          "assists": []
+        }
+      ]
     }
   ]
 }
