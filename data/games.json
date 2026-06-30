@@ -1,0 +1,1027 @@
+{
+  "tournament": {
+    "name": "Défi de la Relève M13 AAA-ÉLITE 2025-26",
+    "location": "Sherbrooke, QC",
+    "dates": {
+      "day1": "2026-05-01",
+      "day2": "2026-05-02",
+      "day3": "2026-05-03"
+    },
+    "total_games": 21,
+    "total_teams": 12
+  },
+  "teams": [
+    "Cantons de l'Estrie",
+    "Phénix du Lac-St-Louis",
+    "Éperviers de Sorel-Tracy",
+    "Patriotes des Appalaches",
+    "Boomerang de Laval",
+    "Lions de l'Outaouais",
+    "Royal de Montréal",
+    "Riverains du Bas-St-Laurent",
+    "Saguenéens du Saguenay",
+    "As de Québec",
+    "Nordiques de Montréal-Nord",
+    "Richelieu Express"
+  ],
+  "games": [
+    {
+      "id": 1,
+      "date": "2026-05-01",
+      "home_team": "Cantons de l'Estrie",
+      "away_team": "Phénix du Lac-St-Louis",
+      "score": {
+        "home": 0,
+        "away": 5
+      },
+      "goals": [
+        {
+          "scorer": "Nathan Côté",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Antoine Perron"
+          ]
+        },
+        {
+          "scorer": "Kevin Nadeau",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Olivier Gauthier",
+            "Nathan Côté"
+          ]
+        },
+        {
+          "scorer": "Jonathan Paquette",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Samuel Leblanc",
+            "Maxime Harvey"
+          ]
+        },
+        {
+          "scorer": "Olivier Gauthier",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Benjamin Leclerc",
+            "Dylan Simard"
+          ]
+        },
+        {
+          "scorer": "Nathan Tremblay",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Thomas Vézina",
+            "Dylan Simard"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "2026-05-01",
+      "home_team": "Éperviers de Sorel-Tracy",
+      "away_team": "Patriotes des Appalaches",
+      "score": {
+        "home": 2,
+        "away": 3
+      },
+      "goals": [
+        {
+          "scorer": "William Tanguay",
+          "scorer_team": "Éperviers de Sorel-Tracy",
+          "assists": [
+            "Marc-Antoine Bergeron",
+            "Antoine Bélanger"
+          ]
+        },
+        {
+          "scorer": "Marc-Antoine Bergeron",
+          "scorer_team": "Éperviers de Sorel-Tracy",
+          "assists": [
+            "Emile Desrosiers",
+            "Jonathan Lapointe"
+          ]
+        },
+        {
+          "scorer": "Félix Nadeau",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Antoine Chabot",
+            "Zachary Vézina"
+          ]
+        },
+        {
+          "scorer": "Zachary Vézina",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Benjamin Tanguay",
+            "Félix Gaudreau"
+          ]
+        },
+        {
+          "scorer": "Benjamin Chabot",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Zachary Vézina",
+            "Tristan Comeau"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "date": "2026-05-01",
+      "home_team": "Boomerang de Laval",
+      "away_team": "Lions de l'Outaouais",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "goals": [
+        {
+          "scorer": "Thomas Leblanc",
+          "scorer_team": "Boomerang de Laval",
+          "assists": [
+            "Gabriel Turgeon"
+          ]
+        },
+        {
+          "scorer": "Hugo Lessard",
+          "scorer_team": "Boomerang de Laval",
+          "assists": [
+            "Justin Couture"
+          ]
+        },
+        {
+          "scorer": "Olivier Chabot",
+          "scorer_team": "Lions de l'Outaouais",
+          "assists": [
+            "Dylan Vézina",
+            "Edouard Tremblay"
+          ]
+        },
+        {
+          "scorer": "William Desrosiers",
+          "scorer_team": "Lions de l'Outaouais",
+          "assists": [
+            "Samuel Comeau",
+            "Félix Chabot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "date": "2026-05-01",
+      "home_team": "Royal de Montréal",
+      "away_team": "Riverains du Bas-St-Laurent",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "goals": [
+        {
+          "scorer": "Antoine Roy",
+          "scorer_team": "Royal de Montréal",
+          "assists": []
+        },
+        {
+          "scorer": "Jonathan Marois",
+          "scorer_team": "Royal de Montréal",
+          "assists": [
+            "Justin Morin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "date": "2026-05-01",
+      "home_team": "Saguenéens du Saguenay",
+      "away_team": "As de Québec",
+      "score": {
+        "home": 4,
+        "away": 1
+      },
+      "goals": [
+        {
+          "scorer": "Edouard Richard",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "William Côté"
+          ]
+        },
+        {
+          "scorer": "William Côté",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Benjamin Comeau",
+            "Alexis Bouchard"
+          ]
+        },
+        {
+          "scorer": "Alexis Lessard",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Zachary Couture",
+            "Xavier Lemieux"
+          ]
+        },
+        {
+          "scorer": "Raphaël Lapointe",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Zachary Couture",
+            "Jonathan Ouellet"
+          ]
+        },
+        {
+          "scorer": "Étienne Gaudreau",
+          "scorer_team": "As de Québec",
+          "assists": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "date": "2026-05-01",
+      "home_team": "Nordiques de Montréal-Nord",
+      "away_team": "Richelieu Express",
+      "score": {
+        "home": 6,
+        "away": 1
+      },
+      "goals": [
+        {
+          "scorer": "Simon Brodeur",
+          "scorer_team": "Nordiques de Montréal-Nord",
+          "assists": [
+            "Léo Poirier",
+            "Hugo Roy"
+          ]
+        },
+        {
+          "scorer": "Loïc Tremblay",
+          "scorer_team": "Nordiques de Montréal-Nord",
+          "assists": [
+            "Xavier Gaudreau",
+            "Félix Paquette"
+          ]
+        },
+        {
+          "scorer": "Antoine Bergeron",
+          "scorer_team": "Nordiques de Montréal-Nord",
+          "assists": []
+        },
+        {
+          "scorer": "Alexis Desrosiers",
+          "scorer_team": "Nordiques de Montréal-Nord",
+          "assists": [
+            "Léo Poirier",
+            "William Michaud"
+          ]
+        },
+        {
+          "scorer": "Antoine Bergeron",
+          "scorer_team": "Nordiques de Montréal-Nord",
+          "assists": [
+            "Simon Brodeur",
+            "Félix Paquette"
+          ]
+        },
+        {
+          "scorer": "Léo Poirier",
+          "scorer_team": "Nordiques de Montréal-Nord",
+          "assists": [
+            "Antoine Bergeron"
+          ]
+        },
+        {
+          "scorer": "Étienne Bélanger",
+          "scorer_team": "Richelieu Express",
+          "assists": [
+            "Edouard Poirier"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "date": "2026-05-01",
+      "home_team": "Cantons de l'Estrie",
+      "away_team": "Boomerang de Laval",
+      "score": {
+        "home": 6,
+        "away": 0
+      },
+      "goals": [
+        {
+          "scorer": "Xavier Rivard",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Étienne Ouellet"
+          ]
+        },
+        {
+          "scorer": "Antoine Pelletier",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Hugo Gaudreau",
+            "Étienne Langlois"
+          ]
+        },
+        {
+          "scorer": "Léo Côté",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Hugo Gaudreau",
+            "Étienne Ouellet"
+          ]
+        },
+        {
+          "scorer": "Justin Auger",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Antoine Pelletier"
+          ]
+        },
+        {
+          "scorer": "Étienne Langlois",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Alexis Tanguay"
+          ]
+        },
+        {
+          "scorer": "Alexis Tanguay",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Hugo Gaudreau"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "date": "2026-05-02",
+      "home_team": "Cantons de l'Estrie",
+      "away_team": "Éperviers de Sorel-Tracy",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "goals": [
+        {
+          "scorer": "Charles Vézina",
+          "scorer_team": "Éperviers de Sorel-Tracy",
+          "assists": [
+            "Loïc Lemieux",
+            "Benjamin Bouchard"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "date": "2026-05-02",
+      "home_team": "Phénix du Lac-St-Louis",
+      "away_team": "Patriotes des Appalaches",
+      "score": {
+        "home": 6,
+        "away": 5
+      },
+      "goals": [
+        {
+          "scorer": "Nathan Côté",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Nathan Tremblay",
+            "Dylan Simard"
+          ]
+        },
+        {
+          "scorer": "Marc-Antoine Vézina",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Antoine Perron",
+            "Samuel Leblanc"
+          ]
+        },
+        {
+          "scorer": "Nathan Côté",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": []
+        },
+        {
+          "scorer": "Samuel Leblanc",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Kevin Nadeau"
+          ]
+        },
+        {
+          "scorer": "Kevin Nadeau",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Dylan Simard"
+          ]
+        },
+        {
+          "scorer": "Nathan Côté",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Nathan Tremblay",
+            "Kevin Nadeau"
+          ]
+        },
+        {
+          "scorer": "Maxime Leblanc",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Félix Nadeau",
+            "Kevin Michaud"
+          ]
+        },
+        {
+          "scorer": "Tristan Comeau",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Nathan Lafleur",
+            "Félix Gaudreau"
+          ]
+        },
+        {
+          "scorer": "Félix Gaudreau",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Félix Nadeau",
+            "Thomas Roy"
+          ]
+        },
+        {
+          "scorer": "Nathan Lafleur",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Maxime Leblanc",
+            "Zachary Vézina"
+          ]
+        },
+        {
+          "scorer": "William Leblanc",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Benjamin Chabot",
+            "Benjamin Tanguay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "date": "2026-05-02",
+      "home_team": "Boomerang de Laval",
+      "away_team": "Royal de Montréal",
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "goals": [
+        {
+          "scorer": "Hugo Langlois",
+          "scorer_team": "Boomerang de Laval",
+          "assists": [
+            "Gabriel Pelletier",
+            "Charles Lemieux"
+          ]
+        },
+        {
+          "scorer": "Charles Lemieux",
+          "scorer_team": "Boomerang de Laval",
+          "assists": [
+            "Gabriel Turgeon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "date": "2026-05-02",
+      "home_team": "Lions de l'Outaouais",
+      "away_team": "Riverains du Bas-St-Laurent",
+      "score": {
+        "home": 4,
+        "away": 0
+      },
+      "goals": [
+        {
+          "scorer": "Raphaël Marois",
+          "scorer_team": "Lions de l'Outaouais",
+          "assists": [
+            "Léo Auger",
+            "William Desrosiers"
+          ]
+        },
+        {
+          "scorer": "Edouard Lapointe",
+          "scorer_team": "Lions de l'Outaouais",
+          "assists": [
+            "Samuel Comeau",
+            "Zachary Villeneuve"
+          ]
+        },
+        {
+          "scorer": "Nicolas Leclerc",
+          "scorer_team": "Lions de l'Outaouais",
+          "assists": [
+            "Olivier Chabot",
+            "Dylan Vézina"
+          ]
+        },
+        {
+          "scorer": "Dylan Vézina",
+          "scorer_team": "Lions de l'Outaouais",
+          "assists": [
+            "Léo Auger",
+            "Charles Auger"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "date": "2026-05-02",
+      "home_team": "Saguenéens du Saguenay",
+      "away_team": "Nordiques de Montréal-Nord",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
+      "goals": [
+        {
+          "scorer": "William Côté",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Mathieu Ouellet",
+            "Jonathan Ouellet"
+          ]
+        },
+        {
+          "scorer": "William Côté",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "William Parenteau",
+            "Alexis Lessard"
+          ]
+        },
+        {
+          "scorer": "Benjamin Comeau",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Marc-Antoine Ouellet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "date": "2026-05-02",
+      "home_team": "As de Québec",
+      "away_team": "Richelieu Express",
+      "score": {
+        "home": 2,
+        "away": 3
+      },
+      "goals": [
+        {
+          "scorer": "Xavier Proulx",
+          "scorer_team": "As de Québec",
+          "assists": [
+            "Marc-Antoine Brodeur"
+          ]
+        },
+        {
+          "scorer": "Antoine Brodeur",
+          "scorer_team": "As de Québec",
+          "assists": [
+            "Léo Harvey"
+          ]
+        },
+        {
+          "scorer": "Justin Marois",
+          "scorer_team": "Richelieu Express",
+          "assists": [
+            "Zachary Langlois",
+            "Mathieu Roy"
+          ]
+        },
+        {
+          "scorer": "Mathieu Roy",
+          "scorer_team": "Richelieu Express",
+          "assists": [
+            "Kevin Lafleur"
+          ]
+        },
+        {
+          "scorer": "Edouard Poirier",
+          "scorer_team": "Richelieu Express",
+          "assists": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "date": "2026-05-02",
+      "home_team": "Phénix du Lac-St-Louis",
+      "away_team": "Lions de l'Outaouais",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "goals": [
+        {
+          "scorer": "Thomas Vézina",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Charles Morin",
+            "Maxime Harvey"
+          ]
+        },
+        {
+          "scorer": "Benjamin Leclerc",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Dylan Richard"
+          ]
+        },
+        {
+          "scorer": "Olivier Chabot",
+          "scorer_team": "Lions de l'Outaouais",
+          "assists": [
+            "Gabriel Tanguay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "date": "2026-05-03",
+      "home_team": "Cantons de l'Estrie",
+      "away_team": "Patriotes des Appalaches",
+      "score": {
+        "home": 6,
+        "away": 6
+      },
+      "goals": [
+        {
+          "scorer": "Justin Auger",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Alexis Turgeon"
+          ]
+        },
+        {
+          "scorer": "Kevin Morin",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Justin Auger",
+            "Étienne Ouellet"
+          ]
+        },
+        {
+          "scorer": "Zachary Turgeon",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": []
+        },
+        {
+          "scorer": "Alexis Tanguay",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Kevin Morin"
+          ]
+        },
+        {
+          "scorer": "Antoine Pelletier",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Gabriel Michaud",
+            "Xavier Lapointe"
+          ]
+        },
+        {
+          "scorer": "Xavier Lapointe",
+          "scorer_team": "Cantons de l'Estrie",
+          "assists": [
+            "Léo Côté"
+          ]
+        },
+        {
+          "scorer": "Benjamin Tanguay",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Zachary Vézina",
+            "Félix Nadeau"
+          ]
+        },
+        {
+          "scorer": "Kevin Michaud",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Antoine Chabot",
+            "Xavier Bouchard"
+          ]
+        },
+        {
+          "scorer": "Thomas Roy",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Félix Nadeau",
+            "Kevin Michaud"
+          ]
+        },
+        {
+          "scorer": "Xavier Bouchard",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": []
+        },
+        {
+          "scorer": "Thomas Roy",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": []
+        },
+        {
+          "scorer": "Antoine Côté",
+          "scorer_team": "Patriotes des Appalaches",
+          "assists": [
+            "Zachary Vézina",
+            "Nathan Lafleur"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "date": "2026-05-03",
+      "home_team": "Phénix du Lac-St-Louis",
+      "away_team": "Éperviers de Sorel-Tracy",
+      "score": {
+        "home": 3,
+        "away": 1
+      },
+      "goals": [
+        {
+          "scorer": "Marc-Antoine Vézina",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Tristan Grenier",
+            "Olivier Gauthier"
+          ]
+        },
+        {
+          "scorer": "Samuel Leblanc",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": []
+        },
+        {
+          "scorer": "Nathan Tremblay",
+          "scorer_team": "Phénix du Lac-St-Louis",
+          "assists": [
+            "Antoine Perron",
+            "Dylan Richard"
+          ]
+        },
+        {
+          "scorer": "William Tanguay",
+          "scorer_team": "Éperviers de Sorel-Tracy",
+          "assists": [
+            "Charles Vézina",
+            "William Ouellet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "date": "2026-05-03",
+      "home_team": "Boomerang de Laval",
+      "away_team": "Riverains du Bas-St-Laurent",
+      "score": {
+        "home": 4,
+        "away": 4
+      },
+      "goals": [
+        {
+          "scorer": "Raphaël Fortin",
+          "scorer_team": "Boomerang de Laval",
+          "assists": [
+            "Jonathan Gaudreau",
+            "Marc-Antoine Leclerc"
+          ]
+        },
+        {
+          "scorer": "Justin Couture",
+          "scorer_team": "Boomerang de Laval",
+          "assists": [
+            "Jonathan Gaudreau",
+            "Gabriel Pelletier"
+          ]
+        },
+        {
+          "scorer": "Justin Couture",
+          "scorer_team": "Boomerang de Laval",
+          "assists": [
+            "Antoine Turgeon",
+            "Thomas Leblanc"
+          ]
+        },
+        {
+          "scorer": "Hugo Lessard",
+          "scorer_team": "Boomerang de Laval",
+          "assists": [
+            "Antoine Turgeon",
+            "Charles Proulx"
+          ]
+        },
+        {
+          "scorer": "Benjamin Bergeron",
+          "scorer_team": "Riverains du Bas-St-Laurent",
+          "assists": [
+            "Emile Gaudreau"
+          ]
+        },
+        {
+          "scorer": "Dylan Gaudreau",
+          "scorer_team": "Riverains du Bas-St-Laurent",
+          "assists": [
+            "Léo Leblanc",
+            "Félix Grenier"
+          ]
+        },
+        {
+          "scorer": "Emile Gaudreau",
+          "scorer_team": "Riverains du Bas-St-Laurent",
+          "assists": [
+            "Simon Tanguay"
+          ]
+        },
+        {
+          "scorer": "William Gauthier",
+          "scorer_team": "Riverains du Bas-St-Laurent",
+          "assists": [
+            "Dylan Gaudreau",
+            "Dylan Pelletier"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "date": "2026-05-03",
+      "home_team": "Lions de l'Outaouais",
+      "away_team": "Royal de Montréal",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "goals": [
+        {
+          "scorer": "Nicolas Leclerc",
+          "scorer_team": "Lions de l'Outaouais",
+          "assists": [
+            "Félix Chabot",
+            "Thomas Lapointe"
+          ]
+        },
+        {
+          "scorer": "Léo Auger",
+          "scorer_team": "Lions de l'Outaouais",
+          "assists": [
+            "Félix Chabot"
+          ]
+        },
+        {
+          "scorer": "Simon Gagnon",
+          "scorer_team": "Royal de Montréal",
+          "assists": [
+            "Étienne Fortin"
+          ]
+        },
+        {
+          "scorer": "Étienne Fortin",
+          "scorer_team": "Royal de Montréal",
+          "assists": [
+            "Jonathan Marois"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "date": "2026-05-03",
+      "home_team": "Saguenéens du Saguenay",
+      "away_team": "Richelieu Express",
+      "score": {
+        "home": 3,
+        "away": 0
+      },
+      "goals": [
+        {
+          "scorer": "William Richard",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Alexis Bouchard",
+            "Antoine Vézina"
+          ]
+        },
+        {
+          "scorer": "Mathieu Ouellet",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Xavier Lemieux",
+            "Antoine Vézina"
+          ]
+        },
+        {
+          "scorer": "Mathieu Ouellet",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Xavier Lemieux"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "date": "2026-05-03",
+      "home_team": "As de Québec",
+      "away_team": "Nordiques de Montréal-Nord",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "goals": [
+        {
+          "scorer": "Olivier Roy",
+          "scorer_team": "As de Québec",
+          "assists": [
+            "Thomas Morin"
+          ]
+        },
+        {
+          "scorer": "Olivier Brassard",
+          "scorer_team": "As de Québec",
+          "assists": [
+            "Olivier Roy",
+            "Raphaël Villeneuve"
+          ]
+        },
+        {
+          "scorer": "Hugo Roy",
+          "scorer_team": "Nordiques de Montréal-Nord",
+          "assists": [
+            "Gabriel Nadeau",
+            "Loïc Tremblay"
+          ]
+        },
+        {
+          "scorer": "Gabriel Nadeau",
+          "scorer_team": "Nordiques de Montréal-Nord",
+          "assists": [
+            "William Michaud"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "date": "2026-05-03",
+      "home_team": "Cantons de l'Estrie",
+      "away_team": "Saguenéens du Saguenay",
+      "score": {
+        "home": 0,
+        "away": 3
+      },
+      "goals": [
+        {
+          "scorer": "Jonathan Ouellet",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Antoine Vézina",
+            "Alexis Bouchard"
+          ]
+        },
+        {
+          "scorer": "Edouard Richard",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": [
+            "Alexis Bouchard"
+          ]
+        },
+        {
+          "scorer": "Zachary Couture",
+          "scorer_team": "Saguenéens du Saguenay",
+          "assists": []
+        }
+      ]
+    }
+  ]
+}
