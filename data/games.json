@@ -323,6 +323,68 @@
           "assists": []
         }
       ]
+    },
+    {
+      "game_number": 7,
+      "home_team": "ARMADA DR M13",
+      "away_team": "SAGUENEENS DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "7:29",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {"name": "YARED THOMAS", "number": 5},
+          "assists": [
+            {"name": "PLAMONDON ELLIOT", "number": 2},
+            {"name": "MARCEAU WILLIAM", "number": 17}
+          ]
+        },
+        {
+          "period": 1,
+          "time": "14:29",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {"name": "AREERATTANATRAGOON LINWA", "number": 12},
+          "assists": [
+            {"name": "MARCEAU WILLIAM", "number": 17},
+            {"name": "PLAMONDON ELLIOT", "number": 2}
+          ]
+        },
+        {
+          "period": 2,
+          "time": "6:45",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {"name": "MARCEAU WILLIAM", "number": 17},
+          "assists": [
+            {"name": "YARED THOMAS", "number": 5},
+            {"name": "LEHOUX ANTHONY", "number": 16}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "7:54",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {"name": "YARED THOMAS", "number": 5},
+          "assists": [
+            {"name": "RIO MILAN", "number": 11}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "9:39",
+          "team": "SAGUENEENS DR M13",
+          "scorer": {"name": "LESKIEWICZ LIAM", "number": 15},
+          "assists": []
+        },
+        {
+          "period": 3,
+          "time": "14:37",
+          "team": "ARMADA DR M13",
+          "scorer": {"name": "DAMIEN BLANCHARD", "number": 85},
+          "assists": [
+            {"name": "MATT GENDREAU", "number": 78}
+          ]
+        }
+      ]
     }
   ]
 }
