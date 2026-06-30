@@ -1043,6 +1043,47 @@
           ]
         }
       ]
+    },
+    {
+      "game_number": 18,
+      "home_team": "OLYMPIQUES DR M13",
+      "away_team": "OCÉANIC DR M13",
+      "goals": [
+        {
+          "period": 1,
+          "time": "2:55",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "NATHAN SHEA", "number": 87},
+          "assists": []
+        },
+        {
+          "period": 1,
+          "time": "10:42",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "NATHAN SHEA", "number": 87},
+          "assists": [
+            {"name": "FELIX BEAUCHESNE", "number": 81},
+            {"name": "HUBERT BAILLARGEON", "number": 73}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "8:38",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "MATHIEU LESSARD", "number": 79},
+          "assists": [
+            {"name": "OLIVIER BELAND", "number": 82},
+            {"name": "FELIX BEAUCHESNE", "number": 81}
+          ]
+        },
+        {
+          "period": 3,
+          "time": "12:51",
+          "team": "OCÉANIC DR M13",
+          "scorer": {"name": "FELIX BEAUCHESNE", "number": 81},
+          "assists": []
+        }
+      ]
     }
   ]
 }
