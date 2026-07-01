@@ -191,6 +191,7 @@
 
     td.rank     { color: #7090aa; font-weight: 600; text-align: center; width: 50px; }
     td.player   { font-weight: 600; color: #e8eaf0; }
+    td.number   { color: #7090aa; font-size: 0.82rem; text-align: center; width: 50px; }
     td.team     { color: #90a4b8; font-size: 0.83rem; }
     td.stat     { text-align: center; font-weight: 700; font-size: 1rem; }
     td.stat-pts { color: #c8a84b; font-size: 1.05rem; }
@@ -223,7 +224,9 @@
     /* ── Responsive ────────────────────────────────────────────────── */
     @media (max-width: 600px) {
       td.team { display: none; }
+      td.number { display: none; }
       thead th.col-team { display: none; }
+      thead th.col-num  { display: none; }
     }
   </style>
 </head>
@@ -232,12 +235,12 @@
 <header>
   <div class="tournament-badge">M13 AAA-ÉLITE</div>
   <h1>Défi de la Relève <span>2025-26</span></h1>
-  <div class="subtitle">Sherbrooke, QC &nbsp;·&nbsp; 1, 2 &amp; 3 mai 2026 &nbsp;·&nbsp; Statistiques individuelles</div>
+  <div class="subtitle">Sherbrooke, QC &nbsp;·&nbsp; 10 mai 2026 &nbsp;·&nbsp; Statistiques individuelles</div>
 </header>
 
 <main>
   <!-- Summary Cards -->
-  <div class="summary-grid" id="summaryGrid">
+  <div class="summary-grid">
     <div class="summary-card"><div class="value" id="totalPlayers">—</div><div class="label">Joueurs</div></div>
     <div class="summary-card"><div class="value" id="totalTeams">—</div><div class="label">Équipes</div></div>
     <div class="summary-card"><div class="value" id="totalGames">—</div><div class="label">Parties</div></div>
@@ -259,16 +262,17 @@
     <table id="statsTable">
       <thead>
         <tr>
-          <th data-col="rank"  class="sort-desc" title="Classement">#<span class="sort-icon"></span></th>
-          <th data-col="name"  class="col-name"  title="Joueur">Joueur<span class="sort-icon"></span></th>
-          <th data-col="team"  class="col-team"  title="Équipe">Équipe<span class="sort-icon"></span></th>
-          <th data-col="pts"   class="sort-desc" title="Points">PTS<span class="sort-icon"></span></th>
-          <th data-col="goals" title="Buts">B<span class="sort-icon"></span></th>
+          <th data-col="rank"    class="sort-desc">#<span class="sort-icon"></span></th>
+          <th data-col="name"    class="col-name">Joueur<span class="sort-icon"></span></th>
+          <th data-col="number"  class="col-num">#<span class="sort-icon"></span></th>
+          <th data-col="team"    class="col-team">Équipe<span class="sort-icon"></span></th>
+          <th data-col="pts"     class="sort-desc">PTS<span class="sort-icon"></span></th>
+          <th data-col="goals"   title="Buts">B<span class="sort-icon"></span></th>
           <th data-col="assists" title="Passes décisives">A<span class="sort-icon"></span></th>
         </tr>
       </thead>
       <tbody id="statsBody">
-        <tr><td colspan="6" class="empty-state"><div class="icon">🏒</div><p>Chargement…</p></td></tr>
+        <tr><td colspan="7" class="empty-state"><div class="icon">🏒</div><p>Chargement…</p></td></tr>
       </tbody>
     </table>
   </div>
@@ -280,72 +284,78 @@
 
 <script>
 // ── State ────────────────────────────────────────────────────────────────────
-let allStats = [];   // [{name, team, goals, assists, pts}]
+let allStats = [];
 let sortCol  = 'pts';
-let sortDir  = 'desc'; // 'asc' | 'desc'
+let sortDir  = 'desc';
 
 // ── Load Data ────────────────────────────────────────────────────────────────
 async function loadData() {
   try {
     const res = await fetch('data/games.json');
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     processData(data);
   } catch (err) {
     console.error('Could not load data/games.json:', err);
     document.getElementById('statsBody').innerHTML =
-      `<tr><td colspan="6" class="empty-state">
-         <div class="icon">⚠️</div>
-         <p>Impossible de charger les données.<br>
-         Assurez-vous que le fichier <code>data/games.json</code> est accessible.</p>
-       </td></tr>`;
+      '<tr><td colspan="7" class="empty-state">' +
+      '<div class="icon">⚠️</div>' +
+      '<p>Impossible de charger les données.<br>' +
+      'Assurez-vous que le fichier <code>data/games.json</code> est accessible.</p>' +
+      '</td></tr>';
   }
 }
 
 // ── Process Data ─────────────────────────────────────────────────────────────
+// Data structure: game.goals[].scorer = {name, number}, game.goals[].team,
+//                 game.goals[].assists = [{name, number}]
 function processData(data) {
-  const goals   = {};  // player → goals count
-  const assists = {};  // player → assists count
-  const teams   = {};  // player → team name
+  // key: "NAME|number" → stats object
+  const players = {};
+
+  function getKey(name, number) { return name + '|' + number; }
+
+  function ensure(name, number, team) {
+    const k = getKey(name, number);
+    if (!players[k]) {
+      players[k] = { name, number, team, goals: 0, assists: 0 };
+    }
+    return players[k];
+  }
+
+  let goalCount = 0;
+  const teamSet = new Set();
 
   for (const game of data.games) {
     for (const goal of game.goals) {
-      const scorer = goal.scorer;
-      goals[scorer]  = (goals[scorer]  || 0) + 1;
-      teams[scorer]  = goal.scorer_team;
+      goalCount++;
+      const team = goal.team;
+      teamSet.add(team);
 
-      for (const assister of goal.assists) {
-        assists[assister] = (assists[assister] || 0) + 1;
-        // Assister's team is in the same goal's scorer_team only if they are
-        // on the same team. We need to track team membership separately.
-        // For assists, we derive the team from players who scored goals on the
-        // same team, or from the scorer_team when assister is on the same team.
-        // Since all assists in a goal belong to scorer's team, record it:
-        if (!teams[assister]) teams[assister] = goal.scorer_team;
+      const p = ensure(goal.scorer.name, goal.scorer.number, team);
+      p.goals++;
+
+      for (const assist of goal.assists) {
+        const a = ensure(assist.name, assist.number, team);
+        a.assists++;
       }
     }
   }
 
-  // Build unified player list
-  const playerSet = new Set([...Object.keys(goals), ...Object.keys(assists)]);
-  allStats = Array.from(playerSet).map(name => ({
-    name,
-    team:    teams[name] || '—',
-    goals:   goals[name]   || 0,
-    assists: assists[name] || 0,
-    pts:     (goals[name] || 0) + (assists[name] || 0),
-  }));
+  // Only include players who have at least 1 point
+  allStats = Object.values(players)
+    .filter(p => (p.goals + p.assists) > 0)
+    .map(p => ({ ...p, pts: p.goals + p.assists }));
 
-  // Update summary cards
-  const totalGoals = Object.values(goals).reduce((s, v) => s + v, 0);
+  // Summary cards
   document.getElementById('totalPlayers').textContent = allStats.length;
-  document.getElementById('totalTeams').textContent   = data.teams.length;
-  document.getElementById('totalGames').textContent   = data.tournament.total_games;
-  document.getElementById('totalGoals').textContent   = totalGoals;
+  document.getElementById('totalTeams').textContent   = teamSet.size;
+  document.getElementById('totalGames').textContent   = data.games.length;
+  document.getElementById('totalGoals').textContent   = goalCount;
 
   // Populate team filter
   const teamSelect = document.getElementById('filterTeam');
-  [...data.teams].sort().forEach(t => {
+  [...teamSet].sort().forEach(t => {
     const opt = document.createElement('option');
     opt.value = t;
     opt.textContent = t;
@@ -357,7 +367,7 @@ function processData(data) {
 
 // ── Filter + Render ──────────────────────────────────────────────────────────
 function applyFilters() {
-  const search    = document.getElementById('searchPlayer').value.trim().toLowerCase();
+  const search     = document.getElementById('searchPlayer').value.trim().toLowerCase();
   const teamFilter = document.getElementById('filterTeam').value;
 
   let filtered = allStats.filter(p => {
@@ -374,25 +384,22 @@ function applyFilters() {
 // ── Sort ─────────────────────────────────────────────────────────────────────
 function sortStats(arr) {
   return [...arr].sort((a, b) => {
-    let va = a[sortCol === 'rank' ? 'pts' : sortCol];
-    let vb = b[sortCol === 'rank' ? 'pts' : sortCol];
+    const col = sortCol === 'rank' ? 'pts' : sortCol;
+    const va = a[col];
+    const vb = b[col];
 
-    // String comparison for name/team
     if (typeof va === 'string') {
       return sortDir === 'asc' ? va.localeCompare(vb, 'fr') : vb.localeCompare(va, 'fr');
     }
 
     if (va !== vb) return sortDir === 'asc' ? va - vb : vb - va;
 
-    // Tiebreaker: pts → goals → name
-    if (sortCol !== 'pts' && a.pts !== b.pts) return b.pts - a.pts;
-    if (a.goals !== b.goals) return b.goals - a.goals;
+    // Tiebreakers: pts → goals → name
+    if (col !== 'pts' && a.pts !== b.pts) return b.pts - a.pts;
+    if (a.goals !== b.goals)              return b.goals - a.goals;
     return a.name.localeCompare(b.name, 'fr');
   });
 }
-
-// Default sort is pts desc, goals as tiebreaker (applied in sortStats above).
-// First call: make sure pts column is active.
 
 // ── Render Table ─────────────────────────────────────────────────────────────
 function renderTable(rows) {
@@ -400,47 +407,43 @@ function renderTable(rows) {
 
   if (rows.length === 0) {
     tbody.innerHTML =
-      `<tr><td colspan="6" class="empty-state">
-         <div class="icon">🔍</div><p>Aucun joueur trouvé.</p>
-       </td></tr>`;
+      '<tr><td colspan="7" class="empty-state">' +
+      '<div class="icon">🔍</div><p>Aucun joueur trouvé.</p>' +
+      '</td></tr>';
     return;
   }
 
-  // Assign ranks BEFORE filtering changes the order
-  const ranked = rows.map((p, i) => ({ ...p, displayRank: i + 1 }));
-
-  // Identify ties for rank numbering
+  // Assign display ranks (ties share the same rank)
   let rank = 1;
-  for (let i = 0; i < ranked.length; i++) {
-    if (i > 0 && ranked[i].pts === ranked[i-1].pts && ranked[i].goals === ranked[i-1].goals) {
-      ranked[i].displayRank = ranked[i-1].displayRank;
+  for (let i = 0; i < rows.length; i++) {
+    if (i > 0 && rows[i].pts === rows[i-1].pts && rows[i].goals === rows[i-1].goals) {
+      rows[i].displayRank = rows[i-1].displayRank;
     } else {
-      ranked[i].displayRank = rank;
+      rows[i].displayRank = rank;
     }
     rank = i + 2;
   }
 
-  tbody.innerHTML = ranked.map(p => {
-    const rankClass = p.displayRank <= 3 ? `rank-${p.displayRank}` : '';
-    const medal     = p.displayRank <= 3 ? `medal-${p.displayRank}` : '';
-    return `
-      <tr class="${rankClass}">
-        <td class="rank">${p.displayRank}</td>
-        <td class="player ${medal}">${escHtml(p.name)}</td>
-        <td class="team">${escHtml(p.team)}</td>
-        <td class="stat stat-pts">${p.pts}</td>
-        <td class="stat stat-g">${p.goals}</td>
-        <td class="stat stat-a">${p.assists}</td>
-      </tr>`;
+  tbody.innerHTML = rows.map(p => {
+    const rankClass = p.displayRank <= 3 ? 'rank-' + p.displayRank : '';
+    const medal     = p.displayRank <= 3 ? 'medal-' + p.displayRank : '';
+    return '<tr class="' + rankClass + '">' +
+      '<td class="rank">' + p.displayRank + '</td>' +
+      '<td class="player ' + medal + '">' + escHtml(p.name) + '</td>' +
+      '<td class="number">' + p.number + '</td>' +
+      '<td class="team">' + escHtml(p.team) + '</td>' +
+      '<td class="stat stat-pts">' + p.pts + '</td>' +
+      '<td class="stat stat-g">' + p.goals + '</td>' +
+      '<td class="stat stat-a">' + p.assists + '</td>' +
+      '</tr>';
   }).join('');
 }
 
-// ── Column Header Click (Sort) ────────────────────────────────────────────────
-document.querySelector('#statsTable thead').addEventListener('click', e => {
+// ── Column Header Click ───────────────────────────────────────────────────────
+document.querySelector('#statsTable thead').addEventListener('click', function(e) {
   const th = e.target.closest('th[data-col]');
   if (!th) return;
   const col = th.dataset.col;
-
   if (col === sortCol) {
     sortDir = sortDir === 'asc' ? 'desc' : 'asc';
   } else {
@@ -450,9 +453,9 @@ document.querySelector('#statsTable thead').addEventListener('click', e => {
   applyFilters();
 });
 
-// ── Update Sort Header Indicators ────────────────────────────────────────────
+// ── Update Sort Headers ───────────────────────────────────────────────────────
 function updateSortHeaders() {
-  document.querySelectorAll('#statsTable thead th').forEach(th => {
+  document.querySelectorAll('#statsTable thead th').forEach(function(th) {
     th.classList.remove('sort-asc', 'sort-desc');
     if (th.dataset.col === sortCol) {
       th.classList.add(sortDir === 'asc' ? 'sort-asc' : 'sort-desc');
@@ -470,9 +473,6 @@ function escHtml(str) {
 }
 
 // ── Boot ─────────────────────────────────────────────────────────────────────
-// Set default sort state on the pts column header
-sortCol = 'pts';
-sortDir = 'desc';
 updateSortHeaders();
 loadData();
 </script>

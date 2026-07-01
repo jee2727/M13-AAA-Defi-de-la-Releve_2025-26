@@ -22,6 +22,8 @@ La page affiche :
 
 ```
 index.html          ← Page web des statistiques (ouvrir dans un navigateur)
+stats.py            ← Script Python pour recalculer STATS.md
+STATS.md            ← Classement généré automatiquement
 data/
   games.json        ← Données des 21 parties (buts, passes, équipes, joueurs)
 ```
@@ -32,22 +34,26 @@ Les données sont dans `data/games.json`. Chaque partie suit ce format :
 
 ```json
 {
-  "id": 1,
-  "date": "2026-05-01",
-  "home_team": "Cantons de l'Estrie",
-  "away_team": "Phénix du Lac-St-Louis",
-  "score": { "home": 3, "away": 2 },
+  "game_number": 1,
+  "home_team": "DRAKKAR DR M13",
+  "away_team": "OCÉANIC DR M13",
   "goals": [
     {
-      "scorer": "Alexis Tremblay",
-      "scorer_team": "Cantons de l'Estrie",
-      "assists": ["Mathieu Gagnon", "William Côté"]
+      "period": 1,
+      "time": "0:23",
+      "team": "DRAKKAR DR M13",
+      "scorer": { "name": "MAXENCE LANGLOIS", "number": 78 },
+      "assists": [{ "name": "CHRISTOPHE BERNARD", "number": 86 }]
     }
   ]
 }
 ```
 
-Modifiez le fichier JSON avec les vraies données de parties, puis rechargez `index.html`.
+Après modification du fichier JSON, rechargez `index.html` ou regénérez `STATS.md` :
+
+```bash
+python3 stats.py
+```
 
 ## Format des statistiques
 
